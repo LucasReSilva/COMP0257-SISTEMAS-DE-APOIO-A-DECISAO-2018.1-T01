@@ -5,71 +5,33 @@
       wizard-layout="vertical"
       :wizard-type="wizardType">
       <div slot="page1" class="form-wizard-tab-content">
-        <h4>Type your name</h4>
-        <p>Zebras communicate with facial expressions and sounds. They make loud
-          braying or barking sounds and
-          soft snorting sounds. The position of their ears, how wide open their
-          eyes are, and whether they show
-          their teeth all send a signal. For example, ears flat back means
-          trouble, or "you better follow orders!"</p>
+        <h4>Funcionalidade #1</h4>
+        <p>Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Paisis, filhis, espiritis santis. </p>
         <div class="form-group with-icon-right"
              :class="{'has-error': errors.has('name'), 'valid': isFormFieldValid('name')}">
           <div class="input-group">
-            <input
-              type="text"
-              name="name"
-              v-model="name"
-              v-validate="'required'"
-              required="required"/>
-            <i
-              class="fa fa-exclamation-triangle error-icon icon-right input-icon"></i>
-            <i class="fa fa-check valid-icon icon-right input-icon"></i>
-            <label class="control-label">Name</label><i class="bar"></i>
-            <small v-show="errors.has('name')" class="help text-danger">{{
-              errors.first('name') }}
-            </small>
+            
+            
           </div>
         </div>
       </div>
       <div slot="page2" class="form-wizard-tab-content">
-        <h4>Select your country</h4>
-        <p>Zebras communicate with facial expressions and sounds. They make loud
-          braying or barking sounds and
-          soft snorting sounds. The position of their ears, how wide open their
-          eyes are, and whether they show
-          their teeth all send a signal. For example, ears flat back means
-          trouble, or "you better follow orders!"</p>
+        <h4>Funcionalidade #2</h4>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Quem num gosta di mé, boa gentis num é. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
 
-        <vuestic-simple-select
-          label="Select country"
-          v-model="selectedCountry"
-          name="country"
-          :required="true"
-          ref="selectedCountrySelect"
-          :options="countriesList">
-        </vuestic-simple-select>
+        
       </div>
       <div slot="page3" class="form-wizard-tab-content">
-        <h4>Confirm selection</h4>
+        <h4>Funcionalidade #3</h4>
         <p>
-          Zebras communicate with facial expressions and sounds. They make loud
-          braying or barking sounds and
-          soft snorting sounds. The position of their ears, how wide open their
-          eyes are, and whether they show
-          their teeth all send a signal. For example, ears flat back means
-          trouble, or "you better follow orders!"
+          Detraxit consequat et quo num tendi nada. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Quem manda na minha terra sou euzis! Diuretics paradis num copo é motivis de denguis. 
         </p>
       </div>
       <div slot="wizardCompleted"
            class="form-wizard-tab-content wizard-completed-tab">
-        <h4>Wizard completed!</h4>
+        <h4>Algum texto justificando o uso dessas funcionalidades</h4>
         <p>
-          Zebras communicate with facial expressions and sounds. They make loud
-          braying or barking sounds and
-          soft snorting sounds. The position of their ears, how wide open their
-          eyes are, and whether they show
-          their teeth all send a signal. For example, ears flat back means
-          trouble, or "you better follow orders!"
+          A ordem dos tratores não altera o pão duris. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Sapien in monti palavris qui num significa nadis i pareci latim. 
         </p>
       </div>
     </vuestic-wizard>
@@ -90,27 +52,31 @@
       return {
         steps: [
           {
-            label: 'Step 1. Name',
+            label: 'Funcionalidade #1',
             slot: 'page1',
             onNext: () => {
-              this.validateFormField('name')
+              // this.validateFormField('name')
+              return true
             },
             isValid: () => {
-              return this.isFormFieldValid('name')
+              // return this.isFormFieldValid('name')
+              return true
             }
           },
           {
-            label: 'Step 2. Country',
+            label: 'Funcionalidade #2',
             slot: 'page2',
             onNext: () => {
-              this.$refs.selectedCountrySelect.validate()
+              // this.$refs.selectedCountrySelect.validate()
+              return true
             },
             isValid: () => {
-              return this.$refs.selectedCountrySelect.isValid()
+              // return this.$refs.selectedCountrySelect.isValid()
+              return true
             }
           },
           {
-            label: 'Step 3. Confirm',
+            label: 'Funcionalidade #3',
             slot: 'page3'
           }
         ],
@@ -121,14 +87,10 @@
     },
     methods: {
       isFormFieldValid (field) {
-        let isValid = false
-        if (this.formFields[field]) {
-          isValid = this.formFields[field].validated && this.formFields[field].valid
-        }
-        return isValid
+        return true
       },
       validateFormField (fieldName) {
-        this.$validator.validate(fieldName, this[fieldName])
+        return true
       }
     }
   }

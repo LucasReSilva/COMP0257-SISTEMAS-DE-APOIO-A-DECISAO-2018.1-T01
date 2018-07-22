@@ -1,5 +1,5 @@
 <template>
-  <div class="profile-dropdown col nav-item dropdown navbar-dropdown" v-dropdown>
+  <div class="profile-dropdown col nav-item dropdown navbar-dropdown">
     <a class="nav-link dropdown-toggle" href="#">
       <span class="profile-section-avatar-container">
         <slot></slot>

@@ -1,12 +1,9 @@
 <template>
   <div class="extra">
     <vuestic-widget :headerText="'extra.tabs.title' | translate" class="no-v-padding">
-      <vuestic-tabs class="tabs" :names="[$t('extra.tabs.maps'), $t('extra.tabs.setupProfile'), $t('extra.tabs.overview')]">
+      <vuestic-tabs class="tabs" :names="[$t('extra.tabs.setupProfile'), $t('extra.tabs.overview')]">
         <div :slot="'extra.tabs.overview' | translate" class="d-flex justify-content-center">
           <overview-tab></overview-tab>
-        </div>
-        <div :slot="'extra.tabs.maps' | translate" class="maps-tab">
-          <leaflet-map></leaflet-map>
         </div>
         <div :slot="'extra.tabs.setupProfile' | translate" class="d-flex justify-content-center">
           <setup-profile-tab wizardType="simple"></setup-profile-tab>
@@ -15,30 +12,12 @@
     </vuestic-widget>
 
     <div class="row">
-      <div class="col-md-4 d-flex">
+      <div v-for="item in contatos" :key="item.id" class="col-md-3 d-flex">
         <vuestic-widget :headerText="$t('extra.profileCard')" class="profile-card-widget">
-          <vuestic-profile-card :name="'Veronique Lee'" :location="'Malaga, Spain'" photoSource="http://i.imgur.com/NLrdqsk.png"
-                                :social="{twitter: 'twitter.com', facebook: 'facebook.com',
+          <vuestic-profile-card :name="item.nome" :location="item.curso" :photoSource="item.photoURL"
+                                :social="{linkedin: 'twitter.com', facebook: 'facebook.com',
                                   instagram: 'instagram.com'}">
           </vuestic-profile-card>
-        </vuestic-widget>
-      </div>
-      <div class="col-md-8 d-flex">
-        <vuestic-widget :headerText="$t('extra.chat')" class="chat-widget">
-          <vuestic-chat v-model="chatMessages"></vuestic-chat>
-        </vuestic-widget>
-      </div>
-    </div>
-
-    <div class="row bottom-widgets">
-      <div class="col-md-6 d-flex">
-        <vuestic-widget class="no-h-padding no-v-padding">
-          <vuestic-feed :initialPosts="posts"></vuestic-feed>
-        </vuestic-widget>
-      </div>
-      <div class="col-md-6 d-flex">
-        <vuestic-widget class="business-posts">
-          <vuestic-social-news :news="news" :url="'http://instagram.com/smartapant'"></vuestic-social-news>
         </vuestic-widget>
       </div>
     </div>
@@ -136,7 +115,42 @@
           {
             photoURL: 'http://i.imgur.com/ZXRIHfk.png'
           }
+        ],
+        contatos: [
+          {
+            id: 1,
+            nome: 'Airton Matheus Cardoso Leite',
+            curso: 'Ciência da Computação',
+            linkedin: 'urlDOIDA',
+            email: 'igor.vc30@gmail.com',
+            photoURL: 'https://pbs.twimg.com/profile_images/983788544551505921/9xTtNQds_400x400.jpg'
+          },
+          {
+            id: 2,
+            nome: 'Gilliard de Jesus Santos',
+            curso: 'Ciência da Computação',
+            linkedin: 'urlDOIDA',
+            email: 'igor.vc30@gmail.com',
+            photoURL: 'https://s2.glbimg.com/1g60nFn3dZCY3pt96AlQISrKUWc=/0x0:452x462/1600x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2018/07/02/mascote.png'
+          },
+          {
+            id: 3,
+            nome: 'Igor Vasconcelos Costa',
+            curso: 'Sistemas de Informacao',
+            linkedin: 'urlDOIDA',
+            email: 'igor.vc30@gmail.com',
+            photoURL: 'http://spb2018.com/media/20180630savoia.jpg'
+          },
+          {
+            id: 4,
+            nome: 'Lucas Renato Aragão Silva',
+            curso: 'Ciência da Computação',
+            linkedin: 'urlDOIDA',
+            email: 'igor.vc30@gmail.com',
+            photoURL: 'https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2018/06/16/2662968-cabelo-loiro-de-neymar-prestes-a-jogar-650x488-3.jpg'
+          }
         ]
+
       }
     }
   }

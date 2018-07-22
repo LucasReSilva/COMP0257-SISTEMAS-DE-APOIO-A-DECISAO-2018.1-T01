@@ -29,16 +29,16 @@
         type: Array,
         default: () => [
           {
-            code: 'gb',
-            name: 'english'
+            code: 'br',
+            name: 'brazilian_portuguese'
           },
           {
             code: 'es',
             name: 'spanish'
           },
           {
-            code: 'br',
-            name: 'brazilian_portuguese'
+            code: 'gb',
+            name: 'english'
           }
         ]
       }

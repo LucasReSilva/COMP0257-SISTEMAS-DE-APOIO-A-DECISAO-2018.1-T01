@@ -7,9 +7,16 @@
 
 .i-nav-messages {
   display: inline-block;
-  height: 21px;
+  height: 18px;
   width: 26px;
   background: url('assets/icons/nav-messages.png') no-repeat center center;
+}
+
+.logo{
+  display: inline-block;
+  height: 180px;
+  width: 260px;
+  background: url('assets/banner.svg') no-repeat left center;
 }
 
 .i-vuestic {

@@ -25,7 +25,7 @@ export default new Router({
     ...demoRoutes,
     {
       path: '*',
-      redirect: { name: 'dashboard' }
+      redirect: { name: 'extra' }
     },
     {
       path: '/auth',
@@ -53,10 +53,15 @@ export default new Router({
       component: AppLayout,
       children: [
         {
+          name: 'extra',
+          path: 'extra',
+          component: lazyLoading('extra/Extra'),
+          default: true
+        },
+        {
           name: 'dashboard',
           path: 'dashboard',
-          component: lazyLoading('dashboard/Dashboard'),
-          default: true
+          component: lazyLoading('dashboard/Dashboard')
         },
         {
           path: 'statistics',
@@ -173,11 +178,6 @@ export default new Router({
               redirect: {name: 'typography'}
             }
           ]
-        },
-        {
-          name: 'extra',
-          path: 'extra',
-          component: lazyLoading('extra/Extra')
         },
         {
           path: 'maps',

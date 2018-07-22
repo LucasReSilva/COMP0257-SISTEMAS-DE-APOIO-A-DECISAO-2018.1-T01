@@ -7,68 +7,47 @@
             <table class="table table-striped first-td-padding">
               <thead>
               <tr>
-                <td>{{'tables.headings.name' | translate}}</td>
-                <td>{{'tables.headings.email' | translate}}</td>
-                <td>{{'tables.headings.city' | translate}}</td>
+                <td>#</td>
+                <td>{{'tables.headings.city' | translate}}</td>              
                 <td align="right">{{'tables.headings.score' | translate}}</td>
                 <td></td>
               </tr>
               </thead>
               <tbody>
               <tr>
-                <td>Matthew McCormick</td>
-                <td>matthew30@mail.ol</td>
+                <td>#</td>
                 <td>Vancouver</td>
                 <td align="right">93</td>
                 <td></td>
               </tr>
               <tr>
-                <td>Nancy Bo</td>
-                <td>nancy@boonweb.com</td>
+                <td>#</td>
                 <td>Washington</td>
                 <td align="right">280</td>
                 <td></td>
               </tr>
               <tr>
-                <td>Frederiko Lopez</td>
-                <td>fr.lopez@webmail.sp</td>
+                <td>#</td>
                 <td>Barcelona</td>
                 <td align="right">16</td>
                 <td></td>
               </tr>
               <tr>
-                <td>Stanley Hummer</td>
-                <td>mr_winner_2999@gmail.cb</td>
+                <td>#</td>
                 <td>Manchester</td>
                 <td align="right">57</td>
                 <td></td>
               </tr>
               <tr>
-                <td>Lendley Wintz</td>
-                <td>9938198146@mailster.io</td>
+                <td>#</td>
                 <td>Wien</td>
                 <td align="right">113</td>
                 <td></td>
               </tr>
               <tr>
-                <td>Barbara Noz</td>
-                <td>barbaranoz@mailster.io</td>
+                <td>#</td>
                 <td>Brussels</td>
                 <td align="right">68</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Matthew McCormick</td>
-                <td>matthew30@mail.ol</td>
-                <td>Vancouver</td>
-                <td align="right">93</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Nancy Bo</td>
-                <td>nancy@boonweb.com</td>
-                <td>Washington</td>
-                <td align="right">280</td>
                 <td></td>
               </tr>
               </tbody>
@@ -85,35 +64,26 @@
             <table class="table table-striped table-sm color-icon-label-table">
               <thead>
               <tr>
-                <td></td>
-                <td>{{'tables.headings.name' | translate}}</td>
-                <td>{{'tables.headings.email' | translate}}</td>
+                <td>{{'tables.headings.status' | translate}}</td>
                 <td>{{'tables.headings.city' | translate}}</td>
-                <td align="right">{{'tables.headings.score' | translate}}</td>
-                <td align="middle"></td>
+                <td align="right">Total {{'tables.headings.score' | translate}}</td>
               </tr>
               </thead>
               <tbody>
               <tr>
                 <td></td>
-                <td>Matthew McCormick</td>
-                <td>matthew30@mail.ol</td>
                 <td>Vancouver</td>
                 <td align="right">93</td>
                 <td align="middle"></td>
               </tr>
               <tr>
                 <td></td>
-                <td>Nancy Bo</td>
-                <td>nancy@boonweb.com</td>
                 <td>Washington</td>
                 <td align="right">280</td>
                 <td align="middle"></td>
               </tr>
               <tr>
                 <td></td>
-                <td>Frederiko Lopez</td>
-                <td>fr.lopez@webmail.sp</td>
                 <td>Barcelona</td>
                 <td align="right">16</td>
                 <td align="middle"></td>
@@ -122,8 +92,6 @@
                 <td>
                   <span class="badge badge-pill badge-danger">DANGER</span>
                 </td>
-                <td>Stanley Hummer</td>
-                <td>mr_winner_2999@gmail.cb</td>
                 <td>Manchester</td>
                 <td align="right">57</td>
                 <td align="middle">
@@ -134,8 +102,6 @@
                 <td>
                   <span class="badge badge-pill badge-primary">SUCCESS</span>
                 </td>
-                <td>Lendley Wintz</td>
-                <td>9938198146@mailster.io</td>
                 <td>Wien</td>
                 <td align="right">113</td>
                 <td align="middle" class="valid">
@@ -146,16 +112,12 @@
                 <td>
                   <span class="badge badge-pill badge-warning">WARNING</span>
                 </td>
-                <td>Barbara Noz</td>
-                <td>barbaranoz@mailster.io</td>
                 <td>Brussels</td>
                 <td align="right">68</td>
                 <td align="middle"></td>
               </tr>
               <tr>
                 <td></td>
-                <td>Matthew McCormick</td>
-                <td>matthew30@mail.ol</td>
                 <td>Vancouver</td>
                 <td align="right">93</td>
                 <td align="middle"></td>
@@ -164,8 +126,6 @@
                 <td>
                   <span class="badge badge-pill badge-info">INFO</span>
                 </td>
-                <td>Nancy Bo</td>
-                <td>nancy@boonweb.com</td>
                 <td>Washington</td>
                 <td align="right">280</td>
                 <td align="middle"></td>
@@ -173,23 +133,6 @@
               </tbody>
             </table>
           </div>
-        </vuestic-widget>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <vuestic-widget :headerText="$t('tables.advanced')">
-          <vuestic-data-table
-            :apiUrl="apiUrl"
-            :tableFields="tableFields"
-            :itemsPerPage="itemsPerPage"
-            :defaultPerPage="defaultTablePerPage"
-            :sortFunctions="sortFunctions"
-            :apiMode="apiMode"
-            :paginationPath="paginationPath"
-            :queryParams="queryParams"
-          />
         </vuestic-widget>
       </div>
     </div>

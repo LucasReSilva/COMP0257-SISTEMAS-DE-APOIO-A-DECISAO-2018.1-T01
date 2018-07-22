@@ -78,10 +78,11 @@
       "title": "Guias",
       "maps": "Mapas",
       "overview": "Visão geral",
-      "setupProfile": "Perfil de instalação"
+      "setupProfile": "Funcionalidades",
+      "funcionalidades": "Funcionalidades"
     },
     "chat": "Gráficos",
-    "profileCard": "Cartão de perfil"
+    "profileCard": "Membros da equipe"
   },
   "forms": {
     "controls": {
@@ -118,9 +119,9 @@
     },
     "selects": {
       "country": "Selecionar Região",
-      "countryMulti": "Selecionar Multiplas Regiões",
+      "countryMulti": "Selecionar Estados",
       "multi": "Selecionar Múltiplos",
-      "simple": "Selecionador Simples",
+      "simple": "Escolher Ano",
       "title": "Selecionadores"
     },
     "wizard": {
@@ -162,7 +163,7 @@
     "buttons": "Botões",
     "charts": "Gráficos",
     "dashboard": "Painel principal",
-    "extra": "Extra",
+    "extra": "Apresentação",
     "formElements": "Elementos de Formulários",
     "forms": "Formulários",
     "formWizards": "Formulários Wizards",
@@ -171,13 +172,13 @@
     "icons": "Icones",
     "spinners": "Spinners",
     "login": "Login",
-    "maps": "Mapas",
+    "maps": "Mapa de Calor",
     "modals": "Modals",
     "notifications": "Notificações",
     "progressBars": "Barra de progresso",
     "signUp": "Cadastrar-se",
     "statistics": "Estatística",
-    "tables": "Tabelas",
+    "tables": "Ranking",
     "typography": "Tipografia",
     "uiElements": "Elementos UI",
     "treeView": "Árvore de visualização",
@@ -203,7 +204,8 @@
     "title": "Modals"
   },
   "navbar": {
-    "messageUs": "Enviar uma pergunta ou feedback para"
+    "messageUs": "Não esqueça: A dengue se combate todo dia.",
+    "messageSmall": "Contra a denge, não deixe água parada."
   },
   "notifications": {
     "all": "Ver todas as notificações",
@@ -222,14 +224,15 @@
     "title": "Barra de Progresso"
   },
   "tables": {
-    "basic": "Tabela Básico",
-    "styled": "Cores, Icones, Rótulos",
+    "basic": "Ranking das cidades com casos de dengue",
+    "styled": "Ranking de evolução das cidades",
     "advanced": "Pesquisar & Paginação",
     "headings": {
       "city": "Cidade",
       "email": "Email",
       "name": "Nome",
-      "score": "Contagem"
+      "score": "Casos",
+      "status": "Situação"
     }
   },
   "user": {

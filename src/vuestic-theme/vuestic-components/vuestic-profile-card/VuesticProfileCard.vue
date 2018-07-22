@@ -3,15 +3,13 @@
     <div class="photo">
       <img :src="photoSource" />
     </div>
-    <h5 class="name">{{name}}</h5>
-    <span class="location"><span class="icon glyphicon glyphicon-map-marker"></span> {{location}}</span>
+    <h5 class="name text-md-center">{{name}}</h5>
+    <span class="location"><span class="icon glyphicon glyphicon-education"></span> {{location}}</span>
     <div class="social">
-      <a class="icon brandico brandico-facebook-rect"
-         v-if="social.facebook" :href="'http://' + social.facebook" target="_blank"></a>
-      <a class="icon brandico brandico-instagram"
+     <a class="icon brandico brandico-linkedin"
          v-if="social.instagram" :href="'http://' + social.instagram" target="_blank"></a>
-      <a class="icon brandico brandico-twitter"
-         v-if="social.twitter" :href="'http://' + social.twitter" target="_blank"></a>
+      <a class=" btn-lg glyphicon glyphicon-envelope"
+         v-if="social.linkedin" :href="'http://' + social.instagram" target="_blank"></a>
     </div>
   </div>
 </template>

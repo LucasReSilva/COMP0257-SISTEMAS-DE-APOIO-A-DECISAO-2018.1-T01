@@ -2,15 +2,16 @@
 
   <vuestic-navbar>
     <header-selector slot="selector" :isOpen.sync="valueProxy"/>
-    <span slot="logo" class="i-vuestic"></span>
+    <span slot="logo" class="logo d-sm-none d-md-block"></span>
     <span slot="center">
-      {{$t('navbar.messageUs')}}&nbsp;<a href="mailto:hello@epicmax.co">hello@epicmax.co</a>
+      <div><h5>{{$t('navbar.messageUs')}}</h5><a href="#">{{$t('navbar.messageSmall')}}</a></div>
     </span>
-    <message-dropdown/>
-    <notification-dropdown/>
+    <!--<message-dropdown/>
+    <notification-dropdown/> -->
     <language-dropdown/>
     <profile-dropdown>
-      <img src="http://i.imgur.com/nfa5itq.png"/>
+      <!--img src="http://i.imgur.com/nfa5itq.png"/-->
+      <img  src="https://i.imgur.com/TLm0Pzc.png"/>
     </profile-dropdown>
   </vuestic-navbar>
 
@@ -53,3 +54,9 @@
     },
   }
 </script>
+<style lang="scss">
+  h5 {
+      display: inline;
+      margin-right: 10px;
+  }
+</style>
