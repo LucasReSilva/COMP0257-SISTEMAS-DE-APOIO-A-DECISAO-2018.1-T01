@@ -8,34 +8,36 @@
               <fieldset>
                 <vuestic-simple-select
                   :label="'forms.selects.simple' | translate"
-                  v-model="simpleSelectModel"
-                  option-key="description"
-                  v-bind:options="simpleOptions">
+                  v-model="anoSelectModel"
+                  option-key="ano"
+                  v-bind:options="anosOptions">
                 </vuestic-simple-select>
               </fieldset>
             </div>
             <div class="row" style="margin-bottom:50px;content: ''; clear: both; display: table;overflow: visible; z-index: 999;   position absolute; height: 120px;">
               <fieldset>
-                <vuestic-multi-select
+                <vuestic-simple-select
                   :label="'forms.selects.countryMulti' | translate"
-                  v-model="multiSelectCountriesModel"
+                  v-model="estadoSelectModel"
                   option-key="nome"
                   option-value="id"
                   v-bind:options="listaEstados">
-                </vuestic-multi-select>
+                </vuestic-simple-select>
               </fieldset>
             </div>
           </form>
+            <div class="col-sm-6 d-flex justify-content-center align-items-center col-lg-12">
+              <button @click="clickMe()" class="btn btn-primary btn-micro"> Update </button>
+            </div>
         </vuestic-widget>
-
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import CountriesList from 'data/CountriesList'
   import ListaEstados from 'data/ListaEstados'
+  import { EventBus } from '../../event-bus.js'
 
   export default {
     name: 'dengue-form',
@@ -43,50 +45,54 @@
     },
     data () {
       return {
-        countriesList: CountriesList,
         listaEstados: ListaEstados,
-        chosenCountry: '',
-        simpleOptions: [
+        anosOptions: [
           {
             id: 1,
-            description: '2011',
+            ano: '2011',
           },
           {
             id: 2,
-            description: '2012',
+            ano: '2012',
           },
           {
             id: 3,
-            description: '2013',
+            ano: '2013',
           },
           {
             id: 4,
-            description: '2014',
+            ano: '2014',
           },
           {
             id: 5,
-            description: '2015',
+            ano: '2015',
           },
           {
             id: 6,
-            description: '2016',
+            ano: '2016',
           },
           {
             id: 7,
-            description: '2017',
+            ano: '2017',
           },
         ],
-        simpleSelectModel: '',
-        multiSelectModel: [],
-        multiSelectCountriesModel: [],
-        multiSelectEstadosModel: [],
-
+        anoSelectModel: '',
+        estadoSelectModel: ''
       }
     },
     methods: {
       clear (field) {
         this[field] = ''
       },
+      clickMe () {
+        let anoEstado = {
+          ano: this.anoSelectModel.ano,
+          estado: this.estadoSelectModel.nome,
+          id: this.estadoSelectModel.id,
+          sigla: this.estadoSelectModel.sigla
+        }
+        EventBus.$emit('getDengueData', anoEstado)
+      }
     },
     created () {
       this.$nextTick(() => {

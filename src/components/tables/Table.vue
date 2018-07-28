@@ -6,6 +6,7 @@
           <div class="table-responsive">
             <table class="table table-striped first-td-padding">
               <thead>
+                {{ dengueData }}
               <tr>
                 <td>#</td>
                 <td>{{'tables.headings.city' | translate}}</td>              
@@ -146,6 +147,8 @@
   import FieldsDef from 'vuestic-components/vuestic-datatable/data/fields-definition'
   import ItemsPerPageDef from 'vuestic-components/vuestic-datatable/data/items-per-page-definition'
   import QueryParams from 'vuestic-components/vuestic-datatable/data/query-params'
+  import { EventBus } from '../../event-bus.js'
+
 
   Vue.component('badge-column', BadgeColumn)
 
@@ -161,8 +164,14 @@
         sortFunctions: FieldsDef.sortFunctions,
         paginationPath: '',
         defaultTablePerPage: 6,
-        queryParams: QueryParams
+        queryParams: QueryParams,
+        dengueData: {}
       }
+    },
+    mounted () {
+      EventBus.$on('getDengueData', data => {
+        this.dengueData = data
+      })
     }
   }
 </script>
