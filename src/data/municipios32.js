@@ -1,4 +1,4 @@
-[
+export default [
   {
     id: 3200102,
     nome: "Afonso Cláudio",

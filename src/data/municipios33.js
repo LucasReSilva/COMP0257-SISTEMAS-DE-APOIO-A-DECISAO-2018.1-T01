@@ -1,4 +1,4 @@
-[
+export default [
   {
     id: 3300100,
     nome: "Angra dos Reis",

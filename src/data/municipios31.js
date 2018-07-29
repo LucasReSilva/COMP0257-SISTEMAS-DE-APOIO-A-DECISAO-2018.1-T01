@@ -1,4 +1,4 @@
-[
+export default [
   {
     id: 3100104,
     nome: "Abadia dos Dourados",

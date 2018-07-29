@@ -1,4 +1,4 @@
-[
+export default [
   {
     id: 4100103,
     nome: "Abatiá",
