@@ -1,5 +1,6 @@
 export default {
   Brasil: {
+    sigla: 'BR',
     ano: {
       2017: 207660929
     },
@@ -10,46 +11,53 @@ export default {
         },
         uf: {
           Rondonia: {
+            sigla: '',
             ano: {
               2017: 17936201
             },
-            municipio: {}
+            municipios: []
           },
           Acre: {
+            sigla: '',
             ano: {
               2017: 829619
             },
-            municipio: {}
+            municipios: []
           },
           Amazonas: {
+            sigla: '',
             ano: {
               2017: 4063614
             },
-            municipio: {}
+            municipios: []
           },
           Roraima: {
+            sigla: '',
             ano: {
               2017: 522636
             },
-            municipio: {}
+            municipios: []
           },
           Pará: {
+            sigla: '',
             ano: {
               2017: 8366628
             },
-            municipio: {}
+            municipios: []
           },
           Amapá: {
+            sigla: '',
             ano: {
               2017: 797722
             },
-            municipio: {}
+            municipios: []
           },
           Tocantins: {
+            sigla: '',
             ano: {
               2017: 1550194
             },
-            municipio: {}
+            municipios: []
           }
         }
       },
@@ -59,10 +67,11 @@ export default {
         },
         uf: {
           Maranhão: {
+            sigla: '',
             ano: {
               2017: 7000229
             },
-            municipio: {}
+            municipios: []
           }
         }
       },
@@ -71,11 +80,12 @@ export default {
           2017: 86949714
         },
         uf: {
-          "Minas Gerais": {
+          'Minas Gerais': {
+            sigla: '',
             ano: {
               2017: 21119536
             },
-            municipio: {}
+            municipios: []
           }
         }
       },
@@ -85,26 +95,49 @@ export default {
         },
         uf: {
           Paraná: {
+            sigla: '',
             ano: {
               2017: 11320892
             },
-            municipio: {}
+            municipios: []
           }
         }
       },
-      "Centro - Oeste": {
+      'Centro - Oeste': {
         ano: {
           2017: 15875907
         },
         uf: {
-          "Mato Grosso do Sul": {
+          'Mato Grosso do Sul': {
+            sigla: '',
             ano: {
               2017: 2713147
             },
-            municipio: {}
-          }
+            municipios: []
+          },
+          'Mato Grosso': {
+            sigla: '',
+            ano: {
+              2017: 3344544
+            },
+            municipios: []
+          },
+          'Goiás': {
+            sigla: '',
+            ano: {
+              2017: 6778772
+            },
+            municipios: []
+          },
+          'Distrito Federal': {
+            sigla: 'DF',
+            ano: {
+              2017: 3039444
+            },
+            municipios: []
+          },
         }
       }
     }
   }
-};
+}
