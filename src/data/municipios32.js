@@ -1,4 +1,4 @@
-export default [
+export default { data: [
   {
     id: 3200102,
     nome: "Afonso Cláudio",
@@ -1715,4 +1715,4 @@ export default [
       }
     }
   }
-]
+]}

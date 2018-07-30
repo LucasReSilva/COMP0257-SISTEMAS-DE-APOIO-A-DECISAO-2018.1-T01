@@ -1,21 +1,21 @@
-export default [
+export default { data: [
   {
     id: 2300101,
-    nome: "Abaiara",
+    nome: 'Abaiara',
     microrregiao: {
       id: 23033,
-      nome: "Brejo Santo",
+      nome: 'Brejo Santo',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -23,21 +23,21 @@ export default [
   },
   {
     id: 2300150,
-    nome: "Acarape",
+    nome: 'Acarape',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -45,21 +45,21 @@ export default [
   },
   {
     id: 2300200,
-    nome: "Acaraú",
+    nome: 'Acaraú',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -67,21 +67,21 @@ export default [
   },
   {
     id: 2300309,
-    nome: "Acopiara",
+    nome: 'Acopiara',
     microrregiao: {
       id: 23021,
-      nome: "Sertão de Senador Pompeu",
+      nome: 'Sertão de Senador Pompeu',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -89,21 +89,21 @@ export default [
   },
   {
     id: 2300408,
-    nome: "Aiuaba",
+    nome: 'Aiuaba',
     microrregiao: {
       id: 23020,
-      nome: "Sertão de Inhamuns",
+      nome: 'Sertão de Inhamuns',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -111,21 +111,21 @@ export default [
   },
   {
     id: 2300507,
-    nome: "Alcântaras",
+    nome: 'Alcântaras',
     microrregiao: {
       id: 23004,
-      nome: "Meruoca",
+      nome: 'Meruoca',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -133,21 +133,21 @@ export default [
   },
   {
     id: 2300606,
-    nome: "Altaneira",
+    nome: 'Altaneira',
     microrregiao: {
       id: 23030,
-      nome: "Caririaçu",
+      nome: 'Caririaçu',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -155,21 +155,21 @@ export default [
   },
   {
     id: 2300705,
-    nome: "Alto Santo",
+    nome: 'Alto Santo',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -177,21 +177,21 @@ export default [
   },
   {
     id: 2300754,
-    nome: "Amontada",
+    nome: 'Amontada',
     microrregiao: {
       id: 23008,
-      nome: "Itapipoca",
+      nome: 'Itapipoca',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -199,21 +199,21 @@ export default [
   },
   {
     id: 2300804,
-    nome: "Antonina do Norte",
+    nome: 'Antonina do Norte',
     microrregiao: {
       id: 23027,
-      nome: "Várzea Alegre",
+      nome: 'Várzea Alegre',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -221,21 +221,21 @@ export default [
   },
   {
     id: 2300903,
-    nome: "Apuiarés",
+    nome: 'Apuiarés',
     microrregiao: {
       id: 23011,
-      nome: "Médio Curu",
+      nome: 'Médio Curu',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -243,21 +243,21 @@ export default [
   },
   {
     id: 2301000,
-    nome: "Aquiraz",
+    nome: 'Aquiraz',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -265,21 +265,21 @@ export default [
   },
   {
     id: 2301109,
-    nome: "Aracati",
+    nome: 'Aracati',
     microrregiao: {
       id: 23022,
-      nome: "Litoral de Aracati",
+      nome: 'Litoral de Aracati',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -287,21 +287,21 @@ export default [
   },
   {
     id: 2301208,
-    nome: "Aracoiaba",
+    nome: 'Aracoiaba',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -309,21 +309,21 @@ export default [
   },
   {
     id: 2301257,
-    nome: "Ararendá",
+    nome: 'Ararendá',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -331,21 +331,21 @@ export default [
   },
   {
     id: 2301307,
-    nome: "Araripe",
+    nome: 'Araripe',
     microrregiao: {
       id: 23029,
-      nome: "Chapada do Araripe",
+      nome: 'Chapada do Araripe',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -353,21 +353,21 @@ export default [
   },
   {
     id: 2301406,
-    nome: "Aratuba",
+    nome: 'Aratuba',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -375,21 +375,21 @@ export default [
   },
   {
     id: 2301505,
-    nome: "Arneiroz",
+    nome: 'Arneiroz',
     microrregiao: {
       id: 23020,
-      nome: "Sertão de Inhamuns",
+      nome: 'Sertão de Inhamuns',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -397,21 +397,21 @@ export default [
   },
   {
     id: 2301604,
-    nome: "Assaré",
+    nome: 'Assaré',
     microrregiao: {
       id: 23029,
-      nome: "Chapada do Araripe",
+      nome: 'Chapada do Araripe',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -419,21 +419,21 @@ export default [
   },
   {
     id: 2301703,
-    nome: "Aurora",
+    nome: 'Aurora',
     microrregiao: {
       id: 23031,
-      nome: "Barro",
+      nome: 'Barro',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -441,21 +441,21 @@ export default [
   },
   {
     id: 2301802,
-    nome: "Baixio",
+    nome: 'Baixio',
     microrregiao: {
       id: 23028,
-      nome: "Lavras da Mangabeira",
+      nome: 'Lavras da Mangabeira',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -463,21 +463,21 @@ export default [
   },
   {
     id: 2301851,
-    nome: "Banabuiú",
+    nome: 'Banabuiú',
     microrregiao: {
       id: 23019,
-      nome: "Sertão de Quixeramobim",
+      nome: 'Sertão de Quixeramobim',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -485,21 +485,21 @@ export default [
   },
   {
     id: 2301901,
-    nome: "Barbalha",
+    nome: 'Barbalha',
     microrregiao: {
       id: 23032,
-      nome: "Cariri",
+      nome: 'Cariri',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -507,21 +507,21 @@ export default [
   },
   {
     id: 2301950,
-    nome: "Barreira",
+    nome: 'Barreira',
     microrregiao: {
       id: 23014,
-      nome: "Chorozinho",
+      nome: 'Chorozinho',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -529,21 +529,21 @@ export default [
   },
   {
     id: 2302008,
-    nome: "Barro",
+    nome: 'Barro',
     microrregiao: {
       id: 23031,
-      nome: "Barro",
+      nome: 'Barro',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -551,21 +551,21 @@ export default [
   },
   {
     id: 2302057,
-    nome: "Barroquinha",
+    nome: 'Barroquinha',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -573,21 +573,21 @@ export default [
   },
   {
     id: 2302107,
-    nome: "Baturité",
+    nome: 'Baturité',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -595,21 +595,21 @@ export default [
   },
   {
     id: 2302206,
-    nome: "Beberibe",
+    nome: 'Beberibe',
     microrregiao: {
       id: 23015,
-      nome: "Cascavel",
+      nome: 'Cascavel',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -617,21 +617,21 @@ export default [
   },
   {
     id: 2302305,
-    nome: "Bela Cruz",
+    nome: 'Bela Cruz',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -639,21 +639,21 @@ export default [
   },
   {
     id: 2302404,
-    nome: "Boa Viagem",
+    nome: 'Boa Viagem',
     microrregiao: {
       id: 23019,
-      nome: "Sertão de Quixeramobim",
+      nome: 'Sertão de Quixeramobim',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -661,21 +661,21 @@ export default [
   },
   {
     id: 2302503,
-    nome: "Brejo Santo",
+    nome: 'Brejo Santo',
     microrregiao: {
       id: 23033,
-      nome: "Brejo Santo",
+      nome: 'Brejo Santo',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -683,21 +683,21 @@ export default [
   },
   {
     id: 2302602,
-    nome: "Camocim",
+    nome: 'Camocim',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -705,21 +705,21 @@ export default [
   },
   {
     id: 2302701,
-    nome: "Campos Sales",
+    nome: 'Campos Sales',
     microrregiao: {
       id: 23029,
-      nome: "Chapada do Araripe",
+      nome: 'Chapada do Araripe',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -727,21 +727,21 @@ export default [
   },
   {
     id: 2302800,
-    nome: "Canindé",
+    nome: 'Canindé',
     microrregiao: {
       id: 23012,
-      nome: "Canindé",
+      nome: 'Canindé',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -749,21 +749,21 @@ export default [
   },
   {
     id: 2302909,
-    nome: "Capistrano",
+    nome: 'Capistrano',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -771,21 +771,21 @@ export default [
   },
   {
     id: 2303006,
-    nome: "Caridade",
+    nome: 'Caridade',
     microrregiao: {
       id: 23012,
-      nome: "Canindé",
+      nome: 'Canindé',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -793,21 +793,21 @@ export default [
   },
   {
     id: 2303105,
-    nome: "Cariré",
+    nome: 'Cariré',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -815,21 +815,21 @@ export default [
   },
   {
     id: 2303204,
-    nome: "Caririaçu",
+    nome: 'Caririaçu',
     microrregiao: {
       id: 23030,
-      nome: "Caririaçu",
+      nome: 'Caririaçu',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -837,21 +837,21 @@ export default [
   },
   {
     id: 2303303,
-    nome: "Cariús",
+    nome: 'Cariús',
     microrregiao: {
       id: 23027,
-      nome: "Várzea Alegre",
+      nome: 'Várzea Alegre',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -859,21 +859,21 @@ export default [
   },
   {
     id: 2303402,
-    nome: "Carnaubal",
+    nome: 'Carnaubal',
     microrregiao: {
       id: 23002,
-      nome: "Ibiapaba",
+      nome: 'Ibiapaba',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -881,21 +881,21 @@ export default [
   },
   {
     id: 2303501,
-    nome: "Cascavel",
+    nome: 'Cascavel',
     microrregiao: {
       id: 23015,
-      nome: "Cascavel",
+      nome: 'Cascavel',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -903,21 +903,21 @@ export default [
   },
   {
     id: 2303600,
-    nome: "Catarina",
+    nome: 'Catarina',
     microrregiao: {
       id: 23020,
-      nome: "Sertão de Inhamuns",
+      nome: 'Sertão de Inhamuns',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -925,21 +925,21 @@ export default [
   },
   {
     id: 2303659,
-    nome: "Catunda",
+    nome: 'Catunda',
     microrregiao: {
       id: 23007,
-      nome: "Santa Quitéria",
+      nome: 'Santa Quitéria',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -947,21 +947,21 @@ export default [
   },
   {
     id: 2303709,
-    nome: "Caucaia",
+    nome: 'Caucaia',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -969,21 +969,21 @@ export default [
   },
   {
     id: 2303808,
-    nome: "Cedro",
+    nome: 'Cedro',
     microrregiao: {
       id: 23026,
-      nome: "Iguatu",
+      nome: 'Iguatu',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -991,21 +991,21 @@ export default [
   },
   {
     id: 2303907,
-    nome: "Chaval",
+    nome: 'Chaval',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1013,21 +1013,21 @@ export default [
   },
   {
     id: 2303931,
-    nome: "Choró",
+    nome: 'Choró',
     microrregiao: {
       id: 23019,
-      nome: "Sertão de Quixeramobim",
+      nome: 'Sertão de Quixeramobim',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1035,21 +1035,21 @@ export default [
   },
   {
     id: 2303956,
-    nome: "Chorozinho",
+    nome: 'Chorozinho',
     microrregiao: {
       id: 23014,
-      nome: "Chorozinho",
+      nome: 'Chorozinho',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1057,21 +1057,21 @@ export default [
   },
   {
     id: 2304004,
-    nome: "Coreaú",
+    nome: 'Coreaú',
     microrregiao: {
       id: 23003,
-      nome: "Coreaú",
+      nome: 'Coreaú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1079,21 +1079,21 @@ export default [
   },
   {
     id: 2304103,
-    nome: "Crateús",
+    nome: 'Crateús',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1101,21 +1101,21 @@ export default [
   },
   {
     id: 2304202,
-    nome: "Crato",
+    nome: 'Crato',
     microrregiao: {
       id: 23032,
-      nome: "Cariri",
+      nome: 'Cariri',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1123,21 +1123,21 @@ export default [
   },
   {
     id: 2304236,
-    nome: "Croatá",
+    nome: 'Croatá',
     microrregiao: {
       id: 23002,
-      nome: "Ibiapaba",
+      nome: 'Ibiapaba',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1145,21 +1145,21 @@ export default [
   },
   {
     id: 2304251,
-    nome: "Cruz",
+    nome: 'Cruz',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1167,21 +1167,21 @@ export default [
   },
   {
     id: 2304269,
-    nome: "Deputado Irapuan Pinheiro",
+    nome: 'Deputado Irapuan Pinheiro',
     microrregiao: {
       id: 23021,
-      nome: "Sertão de Senador Pompeu",
+      nome: 'Sertão de Senador Pompeu',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1189,21 +1189,21 @@ export default [
   },
   {
     id: 2304277,
-    nome: "Ererê",
+    nome: 'Ererê',
     microrregiao: {
       id: 23025,
-      nome: "Serra do Pereiro",
+      nome: 'Serra do Pereiro',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1211,21 +1211,21 @@ export default [
   },
   {
     id: 2304285,
-    nome: "Eusébio",
+    nome: 'Eusébio',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1233,21 +1233,21 @@ export default [
   },
   {
     id: 2304301,
-    nome: "Farias Brito",
+    nome: 'Farias Brito',
     microrregiao: {
       id: 23030,
-      nome: "Caririaçu",
+      nome: 'Caririaçu',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1255,21 +1255,21 @@ export default [
   },
   {
     id: 2304350,
-    nome: "Forquilha",
+    nome: 'Forquilha',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1277,21 +1277,21 @@ export default [
   },
   {
     id: 2304400,
-    nome: "Fortaleza",
+    nome: 'Fortaleza',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1299,21 +1299,21 @@ export default [
   },
   {
     id: 2304459,
-    nome: "Fortim",
+    nome: 'Fortim',
     microrregiao: {
       id: 23022,
-      nome: "Litoral de Aracati",
+      nome: 'Litoral de Aracati',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1321,21 +1321,21 @@ export default [
   },
   {
     id: 2304509,
-    nome: "Frecheirinha",
+    nome: 'Frecheirinha',
     microrregiao: {
       id: 23003,
-      nome: "Coreaú",
+      nome: 'Coreaú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1343,21 +1343,21 @@ export default [
   },
   {
     id: 2304608,
-    nome: "General Sampaio",
+    nome: 'General Sampaio',
     microrregiao: {
       id: 23011,
-      nome: "Médio Curu",
+      nome: 'Médio Curu',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1365,21 +1365,21 @@ export default [
   },
   {
     id: 2304657,
-    nome: "Graça",
+    nome: 'Graça',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1387,21 +1387,21 @@ export default [
   },
   {
     id: 2304707,
-    nome: "Granja",
+    nome: 'Granja',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1409,21 +1409,21 @@ export default [
   },
   {
     id: 2304806,
-    nome: "Granjeiro",
+    nome: 'Granjeiro',
     microrregiao: {
       id: 23030,
-      nome: "Caririaçu",
+      nome: 'Caririaçu',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1431,21 +1431,21 @@ export default [
   },
   {
     id: 2304905,
-    nome: "Groaíras",
+    nome: 'Groaíras',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1453,21 +1453,21 @@ export default [
   },
   {
     id: 2304954,
-    nome: "Guaiúba",
+    nome: 'Guaiúba',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1475,21 +1475,21 @@ export default [
   },
   {
     id: 2305001,
-    nome: "Guaraciaba do Norte",
+    nome: 'Guaraciaba do Norte',
     microrregiao: {
       id: 23002,
-      nome: "Ibiapaba",
+      nome: 'Ibiapaba',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1497,21 +1497,21 @@ export default [
   },
   {
     id: 2305100,
-    nome: "Guaramiranga",
+    nome: 'Guaramiranga',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1519,21 +1519,21 @@ export default [
   },
   {
     id: 2305209,
-    nome: "Hidrolândia",
+    nome: 'Hidrolândia',
     microrregiao: {
       id: 23007,
-      nome: "Santa Quitéria",
+      nome: 'Santa Quitéria',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1541,21 +1541,21 @@ export default [
   },
   {
     id: 2305233,
-    nome: "Horizonte",
+    nome: 'Horizonte',
     microrregiao: {
       id: 23017,
-      nome: "Pacajus",
+      nome: 'Pacajus',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1563,21 +1563,21 @@ export default [
   },
   {
     id: 2305266,
-    nome: "Ibaretama",
+    nome: 'Ibaretama',
     microrregiao: {
       id: 23019,
-      nome: "Sertão de Quixeramobim",
+      nome: 'Sertão de Quixeramobim',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1585,21 +1585,21 @@ export default [
   },
   {
     id: 2305308,
-    nome: "Ibiapina",
+    nome: 'Ibiapina',
     microrregiao: {
       id: 23002,
-      nome: "Ibiapaba",
+      nome: 'Ibiapaba',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1607,21 +1607,21 @@ export default [
   },
   {
     id: 2305332,
-    nome: "Ibicuitinga",
+    nome: 'Ibicuitinga',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1629,21 +1629,21 @@ export default [
   },
   {
     id: 2305357,
-    nome: "Icapuí",
+    nome: 'Icapuí',
     microrregiao: {
       id: 23022,
-      nome: "Litoral de Aracati",
+      nome: 'Litoral de Aracati',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1651,21 +1651,21 @@ export default [
   },
   {
     id: 2305407,
-    nome: "Icó",
+    nome: 'Icó',
     microrregiao: {
       id: 23026,
-      nome: "Iguatu",
+      nome: 'Iguatu',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1673,21 +1673,21 @@ export default [
   },
   {
     id: 2305506,
-    nome: "Iguatu",
+    nome: 'Iguatu',
     microrregiao: {
       id: 23026,
-      nome: "Iguatu",
+      nome: 'Iguatu',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1695,21 +1695,21 @@ export default [
   },
   {
     id: 2305605,
-    nome: "Independência",
+    nome: 'Independência',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1717,21 +1717,21 @@ export default [
   },
   {
     id: 2305654,
-    nome: "Ipaporanga",
+    nome: 'Ipaporanga',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1739,21 +1739,21 @@ export default [
   },
   {
     id: 2305704,
-    nome: "Ipaumirim",
+    nome: 'Ipaumirim',
     microrregiao: {
       id: 23028,
-      nome: "Lavras da Mangabeira",
+      nome: 'Lavras da Mangabeira',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1761,21 +1761,21 @@ export default [
   },
   {
     id: 2305803,
-    nome: "Ipu",
+    nome: 'Ipu',
     microrregiao: {
       id: 23006,
-      nome: "Ipu",
+      nome: 'Ipu',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1783,21 +1783,21 @@ export default [
   },
   {
     id: 2305902,
-    nome: "Ipueiras",
+    nome: 'Ipueiras',
     microrregiao: {
       id: 23006,
-      nome: "Ipu",
+      nome: 'Ipu',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1805,21 +1805,21 @@ export default [
   },
   {
     id: 2306009,
-    nome: "Iracema",
+    nome: 'Iracema',
     microrregiao: {
       id: 23025,
-      nome: "Serra do Pereiro",
+      nome: 'Serra do Pereiro',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1827,21 +1827,21 @@ export default [
   },
   {
     id: 2306108,
-    nome: "Irauçuba",
+    nome: 'Irauçuba',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1849,21 +1849,21 @@ export default [
   },
   {
     id: 2306207,
-    nome: "Itaiçaba",
+    nome: 'Itaiçaba',
     microrregiao: {
       id: 23022,
-      nome: "Litoral de Aracati",
+      nome: 'Litoral de Aracati',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1871,21 +1871,21 @@ export default [
   },
   {
     id: 2306256,
-    nome: "Itaitinga",
+    nome: 'Itaitinga',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1893,21 +1893,21 @@ export default [
   },
   {
     id: 2306306,
-    nome: "Itapajé",
+    nome: 'Itapajé',
     microrregiao: {
       id: 23010,
-      nome: "Uruburetama",
+      nome: 'Uruburetama',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1915,21 +1915,21 @@ export default [
   },
   {
     id: 2306405,
-    nome: "Itapipoca",
+    nome: 'Itapipoca',
     microrregiao: {
       id: 23008,
-      nome: "Itapipoca",
+      nome: 'Itapipoca',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1937,21 +1937,21 @@ export default [
   },
   {
     id: 2306504,
-    nome: "Itapiúna",
+    nome: 'Itapiúna',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1959,21 +1959,21 @@ export default [
   },
   {
     id: 2306553,
-    nome: "Itarema",
+    nome: 'Itarema',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -1981,21 +1981,21 @@ export default [
   },
   {
     id: 2306603,
-    nome: "Itatira",
+    nome: 'Itatira',
     microrregiao: {
       id: 23012,
-      nome: "Canindé",
+      nome: 'Canindé',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2003,21 +2003,21 @@ export default [
   },
   {
     id: 2306702,
-    nome: "Jaguaretama",
+    nome: 'Jaguaretama',
     microrregiao: {
       id: 23024,
-      nome: "Médio Jaguaribe",
+      nome: 'Médio Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2025,21 +2025,21 @@ export default [
   },
   {
     id: 2306801,
-    nome: "Jaguaribara",
+    nome: 'Jaguaribara',
     microrregiao: {
       id: 23024,
-      nome: "Médio Jaguaribe",
+      nome: 'Médio Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2047,21 +2047,21 @@ export default [
   },
   {
     id: 2306900,
-    nome: "Jaguaribe",
+    nome: 'Jaguaribe',
     microrregiao: {
       id: 23024,
-      nome: "Médio Jaguaribe",
+      nome: 'Médio Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2069,21 +2069,21 @@ export default [
   },
   {
     id: 2307007,
-    nome: "Jaguaruana",
+    nome: 'Jaguaruana',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2091,21 +2091,21 @@ export default [
   },
   {
     id: 2307106,
-    nome: "Jardim",
+    nome: 'Jardim',
     microrregiao: {
       id: 23032,
-      nome: "Cariri",
+      nome: 'Cariri',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2113,21 +2113,21 @@ export default [
   },
   {
     id: 2307205,
-    nome: "Jati",
+    nome: 'Jati',
     microrregiao: {
       id: 23033,
-      nome: "Brejo Santo",
+      nome: 'Brejo Santo',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2135,21 +2135,21 @@ export default [
   },
   {
     id: 2307254,
-    nome: "Jijoca de Jericoacoara",
+    nome: 'Jijoca de Jericoacoara',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2157,21 +2157,21 @@ export default [
   },
   {
     id: 2307304,
-    nome: "Juazeiro do Norte",
+    nome: 'Juazeiro do Norte',
     microrregiao: {
       id: 23032,
-      nome: "Cariri",
+      nome: 'Cariri',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2179,21 +2179,21 @@ export default [
   },
   {
     id: 2307403,
-    nome: "Jucás",
+    nome: 'Jucás',
     microrregiao: {
       id: 23027,
-      nome: "Várzea Alegre",
+      nome: 'Várzea Alegre',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2201,21 +2201,21 @@ export default [
   },
   {
     id: 2307502,
-    nome: "Lavras da Mangabeira",
+    nome: 'Lavras da Mangabeira',
     microrregiao: {
       id: 23028,
-      nome: "Lavras da Mangabeira",
+      nome: 'Lavras da Mangabeira',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2223,21 +2223,21 @@ export default [
   },
   {
     id: 2307601,
-    nome: "Limoeiro do Norte",
+    nome: 'Limoeiro do Norte',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2245,21 +2245,21 @@ export default [
   },
   {
     id: 2307635,
-    nome: "Madalena",
+    nome: 'Madalena',
     microrregiao: {
       id: 23019,
-      nome: "Sertão de Quixeramobim",
+      nome: 'Sertão de Quixeramobim',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2267,21 +2267,21 @@ export default [
   },
   {
     id: 2307650,
-    nome: "Maracanaú",
+    nome: 'Maracanaú',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2289,21 +2289,21 @@ export default [
   },
   {
     id: 2307700,
-    nome: "Maranguape",
+    nome: 'Maranguape',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2311,21 +2311,21 @@ export default [
   },
   {
     id: 2307809,
-    nome: "Marco",
+    nome: 'Marco',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2333,21 +2333,21 @@ export default [
   },
   {
     id: 2307908,
-    nome: "Martinópole",
+    nome: 'Martinópole',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2355,21 +2355,21 @@ export default [
   },
   {
     id: 2308005,
-    nome: "Massapê",
+    nome: 'Massapê',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2377,21 +2377,21 @@ export default [
   },
   {
     id: 2308104,
-    nome: "Mauriti",
+    nome: 'Mauriti',
     microrregiao: {
       id: 23031,
-      nome: "Barro",
+      nome: 'Barro',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2399,21 +2399,21 @@ export default [
   },
   {
     id: 2308203,
-    nome: "Meruoca",
+    nome: 'Meruoca',
     microrregiao: {
       id: 23004,
-      nome: "Meruoca",
+      nome: 'Meruoca',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2421,21 +2421,21 @@ export default [
   },
   {
     id: 2308302,
-    nome: "Milagres",
+    nome: 'Milagres',
     microrregiao: {
       id: 23033,
-      nome: "Brejo Santo",
+      nome: 'Brejo Santo',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2443,21 +2443,21 @@ export default [
   },
   {
     id: 2308351,
-    nome: "Milhã",
+    nome: 'Milhã',
     microrregiao: {
       id: 23021,
-      nome: "Sertão de Senador Pompeu",
+      nome: 'Sertão de Senador Pompeu',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2465,21 +2465,21 @@ export default [
   },
   {
     id: 2308377,
-    nome: "Miraíma",
+    nome: 'Miraíma',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2487,21 +2487,21 @@ export default [
   },
   {
     id: 2308401,
-    nome: "Missão Velha",
+    nome: 'Missão Velha',
     microrregiao: {
       id: 23032,
-      nome: "Cariri",
+      nome: 'Cariri',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2509,21 +2509,21 @@ export default [
   },
   {
     id: 2308500,
-    nome: "Mombaça",
+    nome: 'Mombaça',
     microrregiao: {
       id: 23021,
-      nome: "Sertão de Senador Pompeu",
+      nome: 'Sertão de Senador Pompeu',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2531,21 +2531,21 @@ export default [
   },
   {
     id: 2308609,
-    nome: "Monsenhor Tabosa",
+    nome: 'Monsenhor Tabosa',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2553,21 +2553,21 @@ export default [
   },
   {
     id: 2308708,
-    nome: "Morada Nova",
+    nome: 'Morada Nova',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2575,21 +2575,21 @@ export default [
   },
   {
     id: 2308807,
-    nome: "Moraújo",
+    nome: 'Moraújo',
     microrregiao: {
       id: 23003,
-      nome: "Coreaú",
+      nome: 'Coreaú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2597,21 +2597,21 @@ export default [
   },
   {
     id: 2308906,
-    nome: "Morrinhos",
+    nome: 'Morrinhos',
     microrregiao: {
       id: 23001,
-      nome: "Litoral de Camocim e Acaraú",
+      nome: 'Litoral de Camocim e Acaraú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2619,21 +2619,21 @@ export default [
   },
   {
     id: 2309003,
-    nome: "Mucambo",
+    nome: 'Mucambo',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2641,21 +2641,21 @@ export default [
   },
   {
     id: 2309102,
-    nome: "Mulungu",
+    nome: 'Mulungu',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2663,21 +2663,21 @@ export default [
   },
   {
     id: 2309201,
-    nome: "Nova Olinda",
+    nome: 'Nova Olinda',
     microrregiao: {
       id: 23032,
-      nome: "Cariri",
+      nome: 'Cariri',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2685,21 +2685,21 @@ export default [
   },
   {
     id: 2309300,
-    nome: "Nova Russas",
+    nome: 'Nova Russas',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2707,21 +2707,21 @@ export default [
   },
   {
     id: 2309409,
-    nome: "Novo Oriente",
+    nome: 'Novo Oriente',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2729,21 +2729,21 @@ export default [
   },
   {
     id: 2309458,
-    nome: "Ocara",
+    nome: 'Ocara',
     microrregiao: {
       id: 23014,
-      nome: "Chorozinho",
+      nome: 'Chorozinho',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2751,21 +2751,21 @@ export default [
   },
   {
     id: 2309508,
-    nome: "Orós",
+    nome: 'Orós',
     microrregiao: {
       id: 23026,
-      nome: "Iguatu",
+      nome: 'Iguatu',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2773,21 +2773,21 @@ export default [
   },
   {
     id: 2309607,
-    nome: "Pacajus",
+    nome: 'Pacajus',
     microrregiao: {
       id: 23017,
-      nome: "Pacajus",
+      nome: 'Pacajus',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2795,21 +2795,21 @@ export default [
   },
   {
     id: 2309706,
-    nome: "Pacatuba",
+    nome: 'Pacatuba',
     microrregiao: {
       id: 23016,
-      nome: "Fortaleza",
+      nome: 'Fortaleza',
       mesorregiao: {
         id: 2303,
-        nome: "Metropolitana de Fortaleza",
+        nome: 'Metropolitana de Fortaleza',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2817,21 +2817,21 @@ export default [
   },
   {
     id: 2309805,
-    nome: "Pacoti",
+    nome: 'Pacoti',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2839,21 +2839,21 @@ export default [
   },
   {
     id: 2309904,
-    nome: "Pacujá",
+    nome: 'Pacujá',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2861,21 +2861,21 @@ export default [
   },
   {
     id: 2310001,
-    nome: "Palhano",
+    nome: 'Palhano',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2883,21 +2883,21 @@ export default [
   },
   {
     id: 2310100,
-    nome: "Palmácia",
+    nome: 'Palmácia',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2905,21 +2905,21 @@ export default [
   },
   {
     id: 2310209,
-    nome: "Paracuru",
+    nome: 'Paracuru',
     microrregiao: {
       id: 23009,
-      nome: "Baixo Curu",
+      nome: 'Baixo Curu',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2927,21 +2927,21 @@ export default [
   },
   {
     id: 2310258,
-    nome: "Paraipaba",
+    nome: 'Paraipaba',
     microrregiao: {
       id: 23009,
-      nome: "Baixo Curu",
+      nome: 'Baixo Curu',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2949,21 +2949,21 @@ export default [
   },
   {
     id: 2310308,
-    nome: "Parambu",
+    nome: 'Parambu',
     microrregiao: {
       id: 23020,
-      nome: "Sertão de Inhamuns",
+      nome: 'Sertão de Inhamuns',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2971,21 +2971,21 @@ export default [
   },
   {
     id: 2310407,
-    nome: "Paramoti",
+    nome: 'Paramoti',
     microrregiao: {
       id: 23012,
-      nome: "Canindé",
+      nome: 'Canindé',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -2993,21 +2993,21 @@ export default [
   },
   {
     id: 2310506,
-    nome: "Pedra Branca",
+    nome: 'Pedra Branca',
     microrregiao: {
       id: 23021,
-      nome: "Sertão de Senador Pompeu",
+      nome: 'Sertão de Senador Pompeu',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3015,21 +3015,21 @@ export default [
   },
   {
     id: 2310605,
-    nome: "Penaforte",
+    nome: 'Penaforte',
     microrregiao: {
       id: 23033,
-      nome: "Brejo Santo",
+      nome: 'Brejo Santo',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3037,21 +3037,21 @@ export default [
   },
   {
     id: 2310704,
-    nome: "Pentecoste",
+    nome: 'Pentecoste',
     microrregiao: {
       id: 23011,
-      nome: "Médio Curu",
+      nome: 'Médio Curu',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3059,21 +3059,21 @@ export default [
   },
   {
     id: 2310803,
-    nome: "Pereiro",
+    nome: 'Pereiro',
     microrregiao: {
       id: 23025,
-      nome: "Serra do Pereiro",
+      nome: 'Serra do Pereiro',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3081,21 +3081,21 @@ export default [
   },
   {
     id: 2310852,
-    nome: "Pindoretama",
+    nome: 'Pindoretama',
     microrregiao: {
       id: 23015,
-      nome: "Cascavel",
+      nome: 'Cascavel',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3103,21 +3103,21 @@ export default [
   },
   {
     id: 2310902,
-    nome: "Piquet Carneiro",
+    nome: 'Piquet Carneiro',
     microrregiao: {
       id: 23021,
-      nome: "Sertão de Senador Pompeu",
+      nome: 'Sertão de Senador Pompeu',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3125,21 +3125,21 @@ export default [
   },
   {
     id: 2310951,
-    nome: "Pires Ferreira",
+    nome: 'Pires Ferreira',
     microrregiao: {
       id: 23006,
-      nome: "Ipu",
+      nome: 'Ipu',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3147,21 +3147,21 @@ export default [
   },
   {
     id: 2311009,
-    nome: "Poranga",
+    nome: 'Poranga',
     microrregiao: {
       id: 23006,
-      nome: "Ipu",
+      nome: 'Ipu',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3169,21 +3169,21 @@ export default [
   },
   {
     id: 2311108,
-    nome: "Porteiras",
+    nome: 'Porteiras',
     microrregiao: {
       id: 23032,
-      nome: "Cariri",
+      nome: 'Cariri',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3191,21 +3191,21 @@ export default [
   },
   {
     id: 2311207,
-    nome: "Potengi",
+    nome: 'Potengi',
     microrregiao: {
       id: 23029,
-      nome: "Chapada do Araripe",
+      nome: 'Chapada do Araripe',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3213,21 +3213,21 @@ export default [
   },
   {
     id: 2311231,
-    nome: "Potiretama",
+    nome: 'Potiretama',
     microrregiao: {
       id: 23025,
-      nome: "Serra do Pereiro",
+      nome: 'Serra do Pereiro',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3235,21 +3235,21 @@ export default [
   },
   {
     id: 2311264,
-    nome: "Quiterianópolis",
+    nome: 'Quiterianópolis',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3257,21 +3257,21 @@ export default [
   },
   {
     id: 2311306,
-    nome: "Quixadá",
+    nome: 'Quixadá',
     microrregiao: {
       id: 23019,
-      nome: "Sertão de Quixeramobim",
+      nome: 'Sertão de Quixeramobim',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3279,21 +3279,21 @@ export default [
   },
   {
     id: 2311355,
-    nome: "Quixelô",
+    nome: 'Quixelô',
     microrregiao: {
       id: 23026,
-      nome: "Iguatu",
+      nome: 'Iguatu',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3301,21 +3301,21 @@ export default [
   },
   {
     id: 2311405,
-    nome: "Quixeramobim",
+    nome: 'Quixeramobim',
     microrregiao: {
       id: 23019,
-      nome: "Sertão de Quixeramobim",
+      nome: 'Sertão de Quixeramobim',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3323,21 +3323,21 @@ export default [
   },
   {
     id: 2311504,
-    nome: "Quixeré",
+    nome: 'Quixeré',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3345,21 +3345,21 @@ export default [
   },
   {
     id: 2311603,
-    nome: "Redenção",
+    nome: 'Redenção',
     microrregiao: {
       id: 23013,
-      nome: "Baturité",
+      nome: 'Baturité',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3367,21 +3367,21 @@ export default [
   },
   {
     id: 2311702,
-    nome: "Reriutaba",
+    nome: 'Reriutaba',
     microrregiao: {
       id: 23006,
-      nome: "Ipu",
+      nome: 'Ipu',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3389,21 +3389,21 @@ export default [
   },
   {
     id: 2311801,
-    nome: "Russas",
+    nome: 'Russas',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3411,21 +3411,21 @@ export default [
   },
   {
     id: 2311900,
-    nome: "Saboeiro",
+    nome: 'Saboeiro',
     microrregiao: {
       id: 23020,
-      nome: "Sertão de Inhamuns",
+      nome: 'Sertão de Inhamuns',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3433,21 +3433,21 @@ export default [
   },
   {
     id: 2311959,
-    nome: "Salitre",
+    nome: 'Salitre',
     microrregiao: {
       id: 23029,
-      nome: "Chapada do Araripe",
+      nome: 'Chapada do Araripe',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3455,21 +3455,21 @@ export default [
   },
   {
     id: 2312007,
-    nome: "Santana do Acaraú",
+    nome: 'Santana do Acaraú',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3477,21 +3477,21 @@ export default [
   },
   {
     id: 2312106,
-    nome: "Santana do Cariri",
+    nome: 'Santana do Cariri',
     microrregiao: {
       id: 23032,
-      nome: "Cariri",
+      nome: 'Cariri',
       mesorregiao: {
         id: 2307,
-        nome: "Sul Cearense",
+        nome: 'Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3499,21 +3499,21 @@ export default [
   },
   {
     id: 2312205,
-    nome: "Santa Quitéria",
+    nome: 'Santa Quitéria',
     microrregiao: {
       id: 23007,
-      nome: "Santa Quitéria",
+      nome: 'Santa Quitéria',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3521,21 +3521,21 @@ export default [
   },
   {
     id: 2312304,
-    nome: "São Benedito",
+    nome: 'São Benedito',
     microrregiao: {
       id: 23002,
-      nome: "Ibiapaba",
+      nome: 'Ibiapaba',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3543,21 +3543,21 @@ export default [
   },
   {
     id: 2312403,
-    nome: "São Gonçalo do Amarante",
+    nome: 'São Gonçalo do Amarante',
     microrregiao: {
       id: 23009,
-      nome: "Baixo Curu",
+      nome: 'Baixo Curu',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3565,21 +3565,21 @@ export default [
   },
   {
     id: 2312502,
-    nome: "São João do Jaguaribe",
+    nome: 'São João do Jaguaribe',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3587,21 +3587,21 @@ export default [
   },
   {
     id: 2312601,
-    nome: "São Luís do Curu",
+    nome: 'São Luís do Curu',
     microrregiao: {
       id: 23011,
-      nome: "Médio Curu",
+      nome: 'Médio Curu',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3609,21 +3609,21 @@ export default [
   },
   {
     id: 2312700,
-    nome: "Senador Pompeu",
+    nome: 'Senador Pompeu',
     microrregiao: {
       id: 23021,
-      nome: "Sertão de Senador Pompeu",
+      nome: 'Sertão de Senador Pompeu',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3631,21 +3631,21 @@ export default [
   },
   {
     id: 2312809,
-    nome: "Senador Sá",
+    nome: 'Senador Sá',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3653,21 +3653,21 @@ export default [
   },
   {
     id: 2312908,
-    nome: "Sobral",
+    nome: 'Sobral',
     microrregiao: {
       id: 23005,
-      nome: "Sobral",
+      nome: 'Sobral',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3675,21 +3675,21 @@ export default [
   },
   {
     id: 2313005,
-    nome: "Solonópole",
+    nome: 'Solonópole',
     microrregiao: {
       id: 23021,
-      nome: "Sertão de Senador Pompeu",
+      nome: 'Sertão de Senador Pompeu',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3697,21 +3697,21 @@ export default [
   },
   {
     id: 2313104,
-    nome: "Tabuleiro do Norte",
+    nome: 'Tabuleiro do Norte',
     microrregiao: {
       id: 23023,
-      nome: "Baixo Jaguaribe",
+      nome: 'Baixo Jaguaribe',
       mesorregiao: {
         id: 2305,
-        nome: "Jaguaribe",
+        nome: 'Jaguaribe',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3719,21 +3719,21 @@ export default [
   },
   {
     id: 2313203,
-    nome: "Tamboril",
+    nome: 'Tamboril',
     microrregiao: {
       id: 23018,
-      nome: "Sertão de Cratéus",
+      nome: 'Sertão de Cratéus',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3741,21 +3741,21 @@ export default [
   },
   {
     id: 2313252,
-    nome: "Tarrafas",
+    nome: 'Tarrafas',
     microrregiao: {
       id: 23027,
-      nome: "Várzea Alegre",
+      nome: 'Várzea Alegre',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3763,21 +3763,21 @@ export default [
   },
   {
     id: 2313302,
-    nome: "Tauá",
+    nome: 'Tauá',
     microrregiao: {
       id: 23020,
-      nome: "Sertão de Inhamuns",
+      nome: 'Sertão de Inhamuns',
       mesorregiao: {
         id: 2304,
-        nome: "Sertões Cearenses",
+        nome: 'Sertões Cearenses',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3785,21 +3785,21 @@ export default [
   },
   {
     id: 2313351,
-    nome: "Tejuçuoca",
+    nome: 'Tejuçuoca',
     microrregiao: {
       id: 23011,
-      nome: "Médio Curu",
+      nome: 'Médio Curu',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3807,21 +3807,21 @@ export default [
   },
   {
     id: 2313401,
-    nome: "Tianguá",
+    nome: 'Tianguá',
     microrregiao: {
       id: 23002,
-      nome: "Ibiapaba",
+      nome: 'Ibiapaba',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3829,21 +3829,21 @@ export default [
   },
   {
     id: 2313500,
-    nome: "Trairi",
+    nome: 'Trairi',
     microrregiao: {
       id: 23008,
-      nome: "Itapipoca",
+      nome: 'Itapipoca',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3851,21 +3851,21 @@ export default [
   },
   {
     id: 2313559,
-    nome: "Tururu",
+    nome: 'Tururu',
     microrregiao: {
       id: 23010,
-      nome: "Uruburetama",
+      nome: 'Uruburetama',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3873,21 +3873,21 @@ export default [
   },
   {
     id: 2313609,
-    nome: "Ubajara",
+    nome: 'Ubajara',
     microrregiao: {
       id: 23002,
-      nome: "Ibiapaba",
+      nome: 'Ibiapaba',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3895,21 +3895,21 @@ export default [
   },
   {
     id: 2313708,
-    nome: "Umari",
+    nome: 'Umari',
     microrregiao: {
       id: 23028,
-      nome: "Lavras da Mangabeira",
+      nome: 'Lavras da Mangabeira',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3917,21 +3917,21 @@ export default [
   },
   {
     id: 2313757,
-    nome: "Umirim",
+    nome: 'Umirim',
     microrregiao: {
       id: 23010,
-      nome: "Uruburetama",
+      nome: 'Uruburetama',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3939,21 +3939,21 @@ export default [
   },
   {
     id: 2313807,
-    nome: "Uruburetama",
+    nome: 'Uruburetama',
     microrregiao: {
       id: 23010,
-      nome: "Uruburetama",
+      nome: 'Uruburetama',
       mesorregiao: {
         id: 2302,
-        nome: "Norte Cearense",
+        nome: 'Norte Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3961,21 +3961,21 @@ export default [
   },
   {
     id: 2313906,
-    nome: "Uruoca",
+    nome: 'Uruoca',
     microrregiao: {
       id: 23003,
-      nome: "Coreaú",
+      nome: 'Coreaú',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -3983,21 +3983,21 @@ export default [
   },
   {
     id: 2313955,
-    nome: "Varjota",
+    nome: 'Varjota',
     microrregiao: {
       id: 23006,
-      nome: "Ipu",
+      nome: 'Ipu',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -4005,21 +4005,21 @@ export default [
   },
   {
     id: 2314003,
-    nome: "Várzea Alegre",
+    nome: 'Várzea Alegre',
     microrregiao: {
       id: 23027,
-      nome: "Várzea Alegre",
+      nome: 'Várzea Alegre',
       mesorregiao: {
         id: 2306,
-        nome: "Centro-Sul Cearense",
+        nome: 'Centro-Sul Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
@@ -4027,24 +4027,24 @@ export default [
   },
   {
     id: 2314102,
-    nome: "Viçosa do Ceará",
+    nome: 'Viçosa do Ceará',
     microrregiao: {
       id: 23002,
-      nome: "Ibiapaba",
+      nome: 'Ibiapaba',
       mesorregiao: {
         id: 2301,
-        nome: "Noroeste Cearense",
+        nome: 'Noroeste Cearense',
         UF: {
           id: 23,
-          sigla: "CE",
-          nome: "Ceará",
+          sigla: 'CE',
+          nome: 'Ceará',
           regiao: {
             id: 2,
-            sigla: "NE",
-            nome: "Nordeste"
+            sigla: 'NE',
+            nome: 'Nordeste'
           }
         }
       }
     }
   }
-]
+]}

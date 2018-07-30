@@ -36,8 +36,8 @@
 </template>
 
 <script>
-  import ListaEstados from 'data/ListaEstados'
   import { EventBus } from '../../event-bus.js'
+  import ListaEstados from 'data/ListaEstados'
 
   export default {
     name: 'dengue-form',
@@ -76,8 +76,20 @@
             ano: '2017',
           },
         ],
-        anoSelectModel: '',
-        estadoSelectModel: ''
+        anoSelectModel: {
+          id: 7,
+          ano: '2017',
+        },
+        estadoSelectModel: {
+          id: 23,
+          sigla: 'CE',
+          nome: 'Ceará',
+          regiao: {
+            id: 2,
+            sigla: 'NE',
+            nome: 'Nordeste'
+          }
+        }
       }
     },
     methods: {
@@ -98,7 +110,11 @@
       this.$nextTick(() => {
         this.$validator.validateAll()
       })
+      this.clickMe()
     },
+    destroyed: function () {
+      this.clickMe()
+    }
   }
 </script>
 

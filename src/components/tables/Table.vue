@@ -138,16 +138,38 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-12">
+        <vuestic-widget :headerText="$t('tables.basic') + ' no ' + dengueData.estado + ' em ' + dengueData.ano ">
+          <vuestic-data-table
+          :apiMode="apiMode"
+          :tableData="tableData"
+          :tableFields="tableFields"
+          :itemsPerPage="itemsPerPage"
+          :sortFunctions="sortFunctions"
+          :dataModeFilterableFields="dataModeFilterableFields"
+          />
+
+          <spring-spinner
+            slot="loading"
+            :animation-duration="2500"
+            :size="70"
+            color="#4ae387"
+          />
+        </vuestic-widget>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script>
   import Vue from 'vue'
   import BadgeColumn from './BadgeColumn.vue'
-  import FieldsDef from 'vuestic-components/vuestic-datatable/data/fields-definition'
-  import ItemsPerPageDef from 'vuestic-components/vuestic-datatable/data/items-per-page-definition'
-  import QueryParams from 'vuestic-components/vuestic-datatable/data/query-params'
   import { EventBus } from '../../event-bus.js'
+  // import municipios23 from 'data/municipios23'
+  import municipios41 from 'data/municipios41'
+  // import TableData from 'data/TableData'
 
 
   Vue.component('badge-column', BadgeColumn)
@@ -157,20 +179,50 @@
 
     data () {
       return {
-        apiUrl: 'https://vuetable.ratiw.net/api/users',
-        apiMode: true,
-        tableFields: FieldsDef.tableFields,
-        itemsPerPage: ItemsPerPageDef.itemsPerPage,
-        sortFunctions: FieldsDef.sortFunctions,
-        paginationPath: '',
-        defaultTablePerPage: 6,
-        queryParams: QueryParams,
+        apiMode: false, // Choose api mode or just pass array in data-table component
+        tableFields: [
+          {
+            name: '__component:badge-column',
+            title: 'Situação',
+            dataClass: 'text-center'
+          },
+          {
+            title: 'Cidade',
+            name: 'nome', // Object property name in your data e.g. (data[0].name)
+            sortField: 'nome' // Object property name in your data which will be used for sorting
+          },
+          {
+            title: '2017',
+            name: 'ano2017', // Object property name in your data e.g. (data[0].name)
+          }
+        ],
+        itemsPerPage: [  // values in dropdown "Items Per Page"
+          {
+            value: 10
+          },
+          {
+            value: 20
+          },
+          {
+            value: 50
+          }
+        ],
+        sortFunctions: {       // use custom sorting functions for prefered fields
+          'name': function (item1, item2) {
+            return item1 >= item2 ? 1 : -1
+          }
+        },
+        dataModeFilterableFields: ['nome'],
+        tableData: municipios41,
         dengueData: {}
       }
     },
     mounted () {
       EventBus.$on('getDengueData', data => {
         this.dengueData = data
+      })
+      this.tableData.data.map(function (item) {
+        item['ano2017'] = 200
       })
     }
   }

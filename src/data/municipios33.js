@@ -1,4 +1,4 @@
-export default [
+export default { data: [
   {
     id: 3300100,
     nome: "Angra dos Reis",
@@ -2023,4 +2023,4 @@ export default [
       }
     }
   }
-]
+]}

@@ -1,4 +1,4 @@
-export default [
+export default { data: [
   {
     id: 3100104,
     nome: "Abadia dos Dourados",
@@ -18765,4 +18765,4 @@ export default [
       }
     }
   }
-]
+]}
