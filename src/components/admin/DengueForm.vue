@@ -27,7 +27,7 @@
             </div>
           </form>
             <div class="col-sm-6 d-flex justify-content-center align-items-center col-lg-12">
-              <button @click="clickMe()" class="btn btn-primary btn-micro"> Update </button>
+              <button @click="clickMe" class="btn btn-primary btn-micro"> Update </button>
             </div>
         </vuestic-widget>
       </div>
