@@ -165,7 +165,9 @@
         },
         dataModeFilterableFields: ['nome'],
         tableData: {},
-        dengueData: {}
+        dengueData: {},
+        // url: 'https://info.dengue.mat.br/api/alertcity?disease=dengue&format=jsonv&ew_start=1&ew_end=50',
+        // requestData: {}
       }
     },
     mounted () {
