@@ -1,64 +1,6 @@
 <template>
   <div>
     <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <vuestic-widget :headerText="$t('tables.basic')">
-          <div class="table-responsive">
-            <table class="table table-striped first-td-padding">
-              <thead>
-                {{ dengueData }}
-              <tr>
-                <td>#</td>
-                <td>{{'tables.headings.city' | translate}}</td>              
-                <td align="right">{{'tables.headings.score' | translate}}</td>
-                <td></td>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>#</td>
-                <td>Vancouver</td>
-                <td align="right">93</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>#</td>
-                <td>Washington</td>
-                <td align="right">280</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>#</td>
-                <td>Barcelona</td>
-                <td align="right">16</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>#</td>
-                <td>Manchester</td>
-                <td align="right">57</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>#</td>
-                <td>Wien</td>
-                <td align="right">113</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>#</td>
-                <td>Brussels</td>
-                <td align="right">68</td>
-                <td></td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </vuestic-widget>
-      </div>
-    </div>
-
-    <div class="row">
       <div class="col-md-12">
         <vuestic-widget :headerText="$t('tables.styled')">
           <div class="table-responsive">
@@ -164,11 +106,16 @@
 </template>
 
 <script>
+
   import Vue from 'vue'
   import BadgeColumn from './BadgeColumn.vue'
   import { EventBus } from '../../event-bus.js'
-  // import municipios23 from 'data/municipios23'
+  import municipios23 from 'data/municipios23'
+  import municipios31 from 'data/municipios31'
+  import municipios32 from 'data/municipios32'
+  import municipios33 from 'data/municipios33'
   import municipios41 from 'data/municipios41'
+  import populacao from 'data/PopulacaoMunicipal'
   // import TableData from 'data/TableData'
 
 
@@ -194,6 +141,10 @@
           {
             title: '2017',
             name: 'ano2017', // Object property name in your data e.g. (data[0].name)
+          },
+          {
+            title: 'Populacao',
+            name: 'populacao2017'
           }
         ],
         itemsPerPage: [  // values in dropdown "Items Per Page"
@@ -213,16 +164,31 @@
           }
         },
         dataModeFilterableFields: ['nome'],
-        tableData: municipios41,
-        dengueData: {}
+        tableData: {},
+        dengueData: {},
+        // url: 'https://info.dengue.mat.br/api/alertcity?disease=dengue&format=jsonv&ew_start=1&ew_end=50',
+        // requestData: {}
       }
     },
     mounted () {
       EventBus.$on('getDengueData', data => {
-        this.dengueData = data
-      })
-      this.tableData.data.map(function (item) {
-        item['ano2017'] = 200
+        this.$nextTick(function () {
+          this.dengueData = Object.assign({}, this.dengueData, data)
+          switch (this.dengueData.id) {
+            case 23: this.tableData = Object.assign({}, this.tableData, municipios23); break
+            case 31: this.tableData = Object.assign({}, this.tableData, municipios31); break
+            case 32: this.tableData = Object.assign({}, this.tableData, municipios32); break
+            case 33: this.tableData = Object.assign({}, this.tableData, municipios33); break
+            default: this.tableData = Object.assign({}, this.tableData, municipios41)
+          }
+          this.tableData.data.map(function (item) {
+            item['ano2017'] = 200
+            item['populacao2017'] = populacao.municipios[0]['POPULAÇÃO ESTIMADA']
+            // let p = populacao.municipios.filter((populacao) => {
+            //     return populacao.municipios.size === "small"
+            // })
+          })
+        })
       })
     }
   }
