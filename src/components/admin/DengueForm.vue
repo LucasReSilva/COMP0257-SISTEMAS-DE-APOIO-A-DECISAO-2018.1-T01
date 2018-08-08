@@ -25,9 +25,11 @@
                 </vuestic-simple-select>
               </fieldset>
             </div>
+            
           </form>
             <div class="col-sm-6 d-flex justify-content-center align-items-center col-lg-12">
               <button @click="clickMe" class="btn btn-primary btn-micro"> Update </button>
+              <button @click="mudaNois" class="btn btn-primary btn-micro"> Muda </button>
             </div>
         </vuestic-widget>
       </div>
@@ -51,8 +53,9 @@
     },
     data () {
       return {
-        dengueData: {},
-        requestData: {},
+        // dengueData: {},
+        // requestData: {},
+        promesasEmVao: [],
         tableData: {},
         url: 'https://info.dengue.mat.br/api/alertcity?disease=dengue&format=json&ew_start=1&ew_end=50',
         listaEstados: ListaEstados,
@@ -107,19 +110,20 @@
         this[field] = ''
       },
       clickMe () {
-        this.dengueData = {
+        let dengueData = {
           ano: this.anoSelectModel.ano,
           estado: this.estadoSelectModel.nome,
           id: this.estadoSelectModel.id,
           sigla: this.estadoSelectModel.sigla
         }
+        this.$store.commit('setDengueData', dengueData)
         // EventBus.$emit('getDengueData', this.dengueData)
 
         // let cod = 3304557
         //
   
         // this.dengueData = Object.assign({}, this.dengueData, data)   ****REMOVER
-        switch (this.dengueData.id) {
+        switch (dengueData.id) {
           case 23: this.tableData = Object.assign({}, this.tableData, municipios23); break
           case 31: this.tableData = Object.assign({}, this.tableData, municipios31); break
           case 32: this.tableData = Object.assign({}, this.tableData, municipios32); break
@@ -127,35 +131,65 @@
           default: this.tableData = Object.assign({}, this.tableData, municipios41)
         }
         // this.tableData.data.map(function (item) {
-        var arrayLengthData = this.tableData.data.length
+        var arrayLengthData = this.$store.state.app.tableData.data.length
+        console.log(arrayLengthData)
         for (var m = 0; m < arrayLengthData; m++) {
-          let item = this.tableData.data[m]
-          this.$http.get(this.url, {params: {ey_end: this.dengueData.ano,
-            ey_start: this.dengueData.ano,
-            geocode: item['id'] }}).then(result => {
-              this.requestData = result.body
-            }, error => {
-              console.error(error)
-            })
-
+          let item = this.$store.state.app.tableData.data[m]
+          // item['casos2017'] =
+          this.promesasEmVao.push(this.getCasosData(item['id']))
           let cod = Number(String(item['id']).substr(0, 2))
-          // let t = populacao.municipios.find(p => (cod * 10 ** 5 + Number(p['COD. MUNIC'])) === item['id'])
           var arrayLength = populacao.municipios.length
           for (var i = 0; i < arrayLength; i++) {
             if ((cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC'])) === item['id']) {
-              item['populacao2017'] = populacao.municipios[i]['COD. MUNIC']
+              item['populacao2017'] = populacao.municipios[i]['POPULAÇÃO ESTIMADA']
             }
           }
-          let total = 0
-          var arrayLengthCasos = this.requestData.length
-          for (var c = 0; c < arrayLengthCasos; c++) {
-            total += this.requestData[c]['casos']
-            // console.log(this.requestData[c]['casos'])
-          }
-          item['casos2017'] = total
-          console.log('id: ' + item['id'] + '**** total:' + total)
-          console.log(item)
+          console.log('id: ' + item['id'] + item['nome'] + '**** populacao:' + item['populacao2017'] + '** casos ' + item['casos2017'])
+          // item['proporcao'] = Number(item['casos2017']) / Number(item['populacao2017'])
         }
+        this.$store.commit('setTableData', this.tableData)
+        // })
+      },
+      mudaNois () {
+        // let cod = Number(String(this.dengueData.id))
+        // let arrayLength = populacao.municipios.length
+        // for (var i = 0; i < arrayLength; i++) {
+        //     // if ((cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC'])) === item['id']) {
+        //       // item['populacao2017'] = populacao.municipios[i]['COD. MUNIC']
+        //     // }
+        //   let code = cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC'])
+        //   let nome = populacao.municipios[i]['NOME DO MUNICÍPIO']
+        //   let pop = populacao.municipios[i]['POPULAÇÃO ESTIMADA']
+        //   console.log(i + ')' + code + ' - ' + nome + ' ::: ' + pop)
+        // }
+        Promise.all(this.promesasEmVao).then(data => {
+          // let arrayLengthCasos = data.length
+          // let total = 0
+          // for (var c = 0; c < arrayLengthCasos; c++) {
+          //   total += Number(data[c]['casos'])
+          //   console.log(data[c]['casos'])
+          // }
+          console.log(data.data)
+        })
+      },
+      getCasosData (codigo) {
+        let myPromise = new Promise((resolve, reject) => {
+          let data
+          data = this.$http.get(this.url, {params: {ey_end: this.$store.state.app.dengueData.ano,
+            ey_start: this.$store.state.app.dengueData.ano,
+            geocode: codigo }})
+          resolve(data)
+        })
+        this.promesasEmVao.push(myPromise)
+        // let total = 0
+        // myPromise.then(data => {
+        //   let arrayLengthCasos = data.length
+        //   for (var c = 0; c < arrayLengthCasos; c++) {
+        //     total += Number(data[c]['casos'])
+        //       // console.log(this.requestData[c]['casos'])
+        //   }
+        // }).catch(() => {
+        //   console.log('There was an error')
         // })
       }
     },
@@ -163,12 +197,22 @@
       this.$nextTick(() => {
         this.$validator.validateAll()
       })
-      this.clickMe()
+      // this.clickMe()
     },
     destroyed: function () {
-      this.clickMe()
+      // this.clickMe()
     }
   }
+  // let promises = null;
+// cidades.forEach(cidade =>{
+//   let p =new Promise((resolve, reject) => {
+//   reject("reject");
+// });
+//   promises.push(p);
+// });
+
+
+// Promise.all(promises).then()
 </script>
 
 <style lang="scss">
@@ -177,3 +221,4 @@
     cursor: not-allowed;
   }
 </style>
+

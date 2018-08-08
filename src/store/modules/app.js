@@ -23,7 +23,35 @@ const state = {
       lighterGray: '#ddd'
     }
   },
-  isLoading: true
+  isLoading: true,
+  tableData: {data: [{
+    id: 2301000,
+    nome: 'Aquiraz',
+    microrregiao: {
+      id: 23016,
+      nome: 'Fortaleza',
+      mesorregiao: {
+        id: 2303,
+        nome: 'Metropolitana de Fortaleza',
+        UF: {
+          id: 23,
+          sigla: 'CE',
+          nome: 'Ceará',
+          regiao: {
+            id: 2,
+            sigla: 'NE',
+            nome: 'Nordeste'
+          }
+        }
+      }
+    }
+  }]},
+  dengueData: {
+    ano: '2017',
+    estado: 'Ceara',
+    id: '23',
+    sigla: 'CE'
+  }
 }
 
 const mutations = {
@@ -40,6 +68,12 @@ const mutations = {
   },
   setLoading (state, isLoading) {
     state.isLoading = isLoading
+  },
+  setTableData (state, tableData) {
+    state.tableData = tableData
+  },
+  setDengueData (state, dengueData) {
+    state.dengueData = dengueData
   }
 }
 
