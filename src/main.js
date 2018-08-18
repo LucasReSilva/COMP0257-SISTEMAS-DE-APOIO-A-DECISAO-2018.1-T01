@@ -13,11 +13,14 @@ import VuesticPlugin from 'vuestic-theme/vuestic-plugin'
 import './i18n'
 import YmapPlugin from 'vue-yandex-maps'
 import VueResource from 'vue-resource'
-
+import VueGoogleHeatmap from 'vue-google-heatmap'
 
 Vue.use(VuesticPlugin)
 Vue.use(YmapPlugin)
 Vue.use(VueResource)
+Vue.use(VueGoogleHeatmap, {
+  apiKey: 'AIzaSyBNAqPrTQoz9P4NBlDDyfxrnKiafkaL8iQ' // this.$store.state.app.config.googleMaps.apiKey
+})
 
 // NOTE: workaround for VeeValidate + vuetable-2
 Vue.use(VeeValidate, {fieldsBagName: 'formFields'})
