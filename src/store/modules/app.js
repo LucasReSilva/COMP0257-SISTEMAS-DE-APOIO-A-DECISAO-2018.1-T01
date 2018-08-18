@@ -51,7 +51,8 @@ const state = {
     // estado: 'Ceara',
     // id: '23',
     // sigla: 'CE'
-  }
+  },
+  coordenadasAtual: [{}]
 }
 
 const mutations = {
@@ -77,6 +78,13 @@ const mutations = {
   },
   updateTableDataItem (state, params) {
     state.tableData.data[params.itemIndex][params.field] = params.value
+  },
+  updateCoordenadasAtual (state, coordenadas) {
+    state.coordenadasAtual.push(coordenadas)
+  },
+  resetCoordenadasAtual (state) {
+    state.coordenadasAtual = [{}]
+    console.log('resetei coordenadas....')
   }
 }
 

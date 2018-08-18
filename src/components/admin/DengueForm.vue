@@ -115,6 +115,7 @@ export default {
         sigla: this.estadoSelectModel.sigla
       }
       this.$store.commit('setDengueData', dengueData)
+      this.$store.commit('resetCoordenadasAtual')
       this.tableData = { data: [] }
       switch (dengueData.id) {
         case 23:
@@ -140,19 +141,13 @@ export default {
         var arrayLength = populacao.municipios.length
         // getCasosData(item['id']) // request casos da dengue
         for (var i = 0; i < arrayLength; i++) {
-          if (
-            cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC']) ===
-            item['id']
-          ) {
-            this.updateTableDataItem(
-              m,
-              'populacao2017',
-              populacao.municipios[i]['POPULAÇÃO ESTIMADA']
-            )
-            // console.log('id: ' + item['id'] + item['nome'] + '**** populacao:' + item['populacao2017'] + '** casos ' + item['casos2017'])
+          if (cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC']) === item['id']) {
+            this.updateTableDataItem(m, 'populacao2017', populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
+            this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'])
           }
         }
       }
+      console.log(this.$store.state.app.coordenadasAtual)
     },
     mudaNois () {
       // let cod = Number(String(this.dengueData.id))
@@ -206,6 +201,9 @@ export default {
         field: field,
         value: value
       })
+    },
+    updateCoordenadasAtual (lat, lng) {
+      this.$store.commit('updateCoordenadasAtual', {'lat': lat, 'lng': lng})
     }
   },
   created () {
