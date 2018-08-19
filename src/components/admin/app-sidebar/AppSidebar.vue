@@ -10,14 +10,14 @@
       </sidebar-link>
 
        <sidebar-link
-          :to="{ name: 'google-maps' }">
+          :to="{ name: 'google-maps' }" v-show="!isDengueDataEmpty(this.$store.state.app.dengueData)">
           <span slot="title">
           <span class="sidebar-menu-item-icon vuestic-icon vuestic-icon-maps"></span>
           <span>{{ $t('menu.maps') }}</span>
         </span>
         </sidebar-link>
         <sidebar-link
-        :to="{ name: 'tables' }">
+        :to="{ name: 'tables' }" v-show="!isDengueDataEmpty(this.$store.state.app.dengueData)">
         <span slot="title">
           <span class="sidebar-menu-item-icon vuestic-icon vuestic-icon-tables"></span>
           <span>{{ $t('menu.tables') }}</span>
@@ -51,6 +51,11 @@
       isOpen: {
         type: Boolean,
         required: true
+      }
+    },
+    methods: {
+      isDengueDataEmpty (obj) {
+        return Object.keys(obj).length === 0 && obj.constructor === Object
       }
     }
   }

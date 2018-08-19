@@ -13,6 +13,7 @@ import VuesticPlugin from 'vuestic-theme/vuestic-plugin'
 import './i18n'
 import YmapPlugin from 'vue-yandex-maps'
 import VueResource from 'vue-resource'
+// https://www.npmjs.com/package/vue-google-heatmap
 import VueGoogleHeatmap from 'vue-google-heatmap'
 
 Vue.use(VuesticPlugin)
@@ -40,7 +41,7 @@ router.beforeEach((to, from, next) => {
 
 router.afterEach((to, from) => {
   mediaHandler()
-  store.commit('setLoading', false)
+  store.commit('setLoading', true)
 })
 
 /* eslint-disable no-new */
