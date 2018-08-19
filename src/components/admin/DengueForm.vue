@@ -143,15 +143,11 @@ export default {
         for (var i = 0; i < arrayLength; i++) {
           if (cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC']) === item['id']) {
             this.updateTableDataItem(m, 'populacao2017', populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
-            this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], 2)
+            this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], (i % 20))
           }
         }
       }
-      // for (let index = 0; index < this.$store.state.app.coordenadasAtual.length; index++) {
-      //   const element = array[index];
-      // }
-      console.log(this.$store.state.app.coordenadasAtual.length)
-      console.log(JSON.parse(JSON.stringify(this.$store.state.app.coordenadasAtual)))
+      console.log('Dados Atualizados') // descolar um LADA
     },
     mudaNois () {
       // let cod = Number(String(this.dengueData.id))
@@ -208,7 +204,7 @@ export default {
     },
     updateCoordenadasAtual (lat, lng, qtd) {
       for (let index = 0; index < qtd; index++) {
-        let coordenada = {'lat': lat, 'lng': lng}
+        let coordenada = {lat: lat, lng: lng}
         this.$store.commit('updateCoordenadasAtual', coordenada)
       }
     }

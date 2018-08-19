@@ -52,7 +52,7 @@ const state = {
     // id: '23',
     // sigla: 'CE'
   },
-  coordenadasAtual: [{}]
+  coordenadasAtual: []
 }
 
 const mutations = {
@@ -83,7 +83,7 @@ const mutations = {
     state.coordenadasAtual.push(coordenadas)
   },
   resetCoordenadasAtual (state) {
-    state.coordenadasAtual = [{}]
+    state.coordenadasAtual = []
     console.log('resetei coordenadas....')
   }
 }
