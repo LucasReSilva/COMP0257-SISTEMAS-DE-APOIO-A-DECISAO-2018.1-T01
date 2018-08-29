@@ -60,30 +60,22 @@ export default {
       anosOptions: [
         {
           id: 1,
-          ano: '2011'
-        },
-        {
-          id: 2,
-          ano: '2012'
-        },
-        {
-          id: 3,
           ano: '2013'
         },
         {
-          id: 4,
+          id: 2,
           ano: '2014'
         },
         {
-          id: 5,
+          id: 3,
           ano: '2015'
         },
         {
-          id: 6,
+          id: 4,
           ano: '2016'
         },
         {
-          id: 7,
+          id: 5,
           ano: '2017'
         }
       ],
@@ -108,6 +100,7 @@ export default {
       this[field] = ''
     },
     update () {
+      this.$store.commit('setLoading', true)
       let dengueData = {
         ano: this.anoSelectModel.ano,
         estado: this.estadoSelectModel.nome,
@@ -143,33 +136,14 @@ export default {
         for (var i = 0; i < arrayLength; i++) {
           if (cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC']) === item['id']) {
             this.updateTableDataItem(m, 'populacao2017', populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
-            this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], (i % 20))
+            this.updateTableDataItem(m, 'casos', this.seedCasos(populacao.municipios[i]['POPULAÇÃO ESTIMADA']))
+            this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], this.$store.state.app.tableData.data.casos['f' + dengueData.ano])
           }
         }
       }
+      this.$store.commit('setLoading', false)
       console.log('Dados Atualizados') // descolar um LADA
-    },
-    mudaNois () {
-      // let cod = Number(String(this.dengueData.id))
-      // let arrayLength = populacao.municipios.length
-      // for (var i = 0; i < arrayLength; i++) {
-      //     // if ((cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC'])) === item['id']) {
-      //       // item['populacao2017'] = populacao.municipios[i]['COD. MUNIC']
-      //     // }
-      //   let code = cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC'])
-      //   let nome = populacao.municipios[i]['NOME DO MUNICÍPIO']
-      //   let pop = populacao.municipios[i]['POPULAÇÃO ESTIMADA']
-      //   console.log(i + ')' + code + ' - ' + nome + ' ::: ' + pop)
-      // }
-      // Promise.all(this.promesasEmVao).then(data => {
-      // let arrayLengthCasos = data.length
-      // let total = 0
-      // for (var c = 0; c < arrayLengthCasos; c++) {
-      //   total += Number(data[c]['casos'])
-      //   console.log(data[c]['casos'])
-      // }
-      // console.log(data.data)
-      // })
+      console.log(JSON.stringify(this.$store.state.app.tableData.data[2]))
     },
     getCasosData (codigo) {
       let myPromise = new Promise((resolve, reject) => {
@@ -207,6 +181,36 @@ export default {
         let coordenada = {lat: lat, lng: lng}
         this.$store.commit('updateCoordenadasAtual', coordenada)
       }
+      console.log(qtd)
+    },
+    seedCasos (populacao) {
+      populacao = String(populacao)
+      if (populacao.length <= 4) { populacao = '0' + populacao }
+      let casoBase = Math.floor(Number(populacao) / 1000)
+      // let fakeCasos = {}
+      let fakeCasos = Object.assign({},
+        this.createCasoObject(2013, populacao, casoBase, 0),
+        this.createCasoObject(2014, populacao, casoBase, 1),
+        this.createCasoObject(2015, populacao, casoBase, 2),
+        this.createCasoObject(2016, populacao, casoBase, 3),
+        this.createCasoObject(2017, populacao, casoBase, 4)
+      )
+      return fakeCasos
+    },
+    createCasoObject (ano, populacao, casoBase, index) {
+      let obj = {}
+      obj['f' + ano] = Math.floor(((Number(populacao[index]) / 3) + 1) * casoBase)
+      let indicador = (obj['f' + ano] / Number(populacao)) * 100000
+      if (indicador < 100) {
+        obj['i' + ano] = 'baixo'
+      } else if (indicador >= 100 & indicador <= 300) {
+        obj['i' + ano] = 'medio'
+      } else {
+        obj['i' + ano] = 'alto'
+      }
+      obj['p' + ano] = ((obj['f' + ano] / Number(populacao)) * 100).toFixed(2)
+
+      return obj
     }
   },
   created () {

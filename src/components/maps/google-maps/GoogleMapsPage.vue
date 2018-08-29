@@ -6,7 +6,7 @@
           <!-- <google-map></google-map> -->
           <vue-google-heatmap :points="points"
                       :lat="points[0]['lat']"
-                      :lng="points[0]['lng']"
+                      :lng="points[0]['lng']" 
                       :initial-zoom="7" />
         </vuestic-widget>
       </div>
@@ -24,7 +24,7 @@
     },
     data () {
       return {
-        points: JSON.parse(JSON.stringify(this.$store.state.app.coordenadasAtual))
+        points: this.$store.state.app.coordenadasAtual
       }
     }
   }

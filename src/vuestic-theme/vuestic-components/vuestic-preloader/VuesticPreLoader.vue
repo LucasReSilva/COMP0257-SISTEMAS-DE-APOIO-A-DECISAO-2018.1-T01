@@ -2,6 +2,7 @@
   <div class="vuestic-pre-loader">
     <canvas ref="canvas"></canvas>
   </div>
+  
 </template>
 
 <script>

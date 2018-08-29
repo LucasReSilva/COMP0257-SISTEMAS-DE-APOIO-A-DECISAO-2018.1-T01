@@ -82,6 +82,28 @@
 
     <div class="row">
       <div class="col-md-12">
+        <vuestic-widget :headerText="'Situação dos casos no ' + this.$store.state.app.dengueData.estado">
+          <vuestic-data-table
+          :apiMode="apiMode"
+          :tableData="this.$store.state.app.tableData"
+          :tableFields="tableFieldsCasos"
+          :itemsPerPage="itemsPerPage"
+          :sortFunctions="sortFunctions"
+          :dataModeFilterableFields="dataModeFilterableFields"
+          />
+
+          <spring-spinner
+            slot="loading"
+            :animation-duration="2500"
+            :size="70"
+            color="#4ae387"
+          />
+        </vuestic-widget>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
         <vuestic-widget :headerText="$t('tables.basic') + ' no ' + this.$store.state.app.dengueData.estado + ' em ' + this.$store.state.app.dengueData.ano ">
           <vuestic-data-table
           :apiMode="apiMode"
@@ -131,8 +153,8 @@
             sortField: 'nome' // Object property name in your data which will be used for sorting
           },
           {
-            title: 'Focos 2017',
-            name: 'casos2017', // Object property name in your data e.g. (data[0].name)
+            title: 'Casos 2017',
+            name: 'casos.f2017', // Object property name in your data e.g. (data[0].name)
           },
           {
             title: 'População',
@@ -141,8 +163,45 @@
           },
           {
             title: '%',
-            name: 'proporcao',
+            name: 'casos.p2017',
           }
+        ],
+        tableFieldsCasos: [
+          {
+            name: '',
+            title: 'Situação',
+            dataClass: 'text-center'
+          },
+          {
+            title: 'Cidade',
+            name: 'nome', // Object property name in your data e.g. (data[0].name)
+            sortField: 'nome' // Object property name in your data which will be used for sorting
+          },
+          {
+            title: 'C2013',
+            name: 'casos.f2013', // Object property name in your data e.g. (data[0].name)
+            dataClass: 'casos.i2017'
+          },
+          {
+            title: 'C2014',
+            name: 'casos.f2014', // Object property name in your data e.g. (data[0].name)
+          },
+          {
+            title: 'C2015',
+            name: 'casos.f2015', // Object property name in your data e.g. (data[0].name)
+          },
+          {
+            title: 'C2016',
+            name: 'casos.f2016', // Object property name in your data e.g. (data[0].name)
+          },
+          {
+            title: 'C2017',
+            name: 'casos.f2017', // Object property name in your data e.g. (data[0].name)
+          }
+          // {
+          //   title: '%',
+          //   name: 'crescimento',
+          // }
         ],
         itemsPerPage: [  // values in dropdown "Items Per Page"
           {

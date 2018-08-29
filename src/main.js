@@ -41,7 +41,7 @@ router.beforeEach((to, from, next) => {
 
 router.afterEach((to, from) => {
   mediaHandler()
-  store.commit('setLoading', true)
+  store.commit('setLoading', false)
 })
 
 /* eslint-disable no-new */
