@@ -76,8 +76,14 @@ const mutations = {
   setDengueData (state, dengueData) {
     state.dengueData = dengueData
   },
+  setCoordenadas (state, coordenadas) {
+    state.coordenadasAtual = coordenadas
+  },
   updateTableDataItem (state, params) {
     state.tableData.data[params.itemIndex][params.field] = params.value
+  },
+  setDataTableCoordenadas (state, coordendas) {
+    state.tableData.data['coordenadas'] = coordendas
   },
   updateCoordenadasAtual (state, coordenadas) {
     state.coordenadasAtual.push(coordenadas)

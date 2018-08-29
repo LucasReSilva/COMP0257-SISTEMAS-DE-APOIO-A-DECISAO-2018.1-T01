@@ -2,86 +2,6 @@
   <div>
     <div class="row">
       <div class="col-md-12">
-        <vuestic-widget :headerText="$t('tables.styled')">
-          <div class="table-responsive">
-            <table class="table table-striped table-sm color-icon-label-table">
-              <thead>
-              <tr>
-                <td>{{'tables.headings.status' | translate}}</td>
-                <td>{{'tables.headings.city' | translate}}</td>
-                <td align="right">Total {{'tables.headings.score' | translate}}</td>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td></td>
-                <td>Vancouver</td>
-                <td align="right">93</td>
-                <td align="middle"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Washington</td>
-                <td align="right">280</td>
-                <td align="middle"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Barcelona</td>
-                <td align="right">16</td>
-                <td align="middle"></td>
-              </tr>
-              <tr class="table-danger">
-                <td>
-                  <span class="badge badge-pill badge-danger">DANGER</span>
-                </td>
-                <td>Manchester</td>
-                <td align="right">57</td>
-                <td align="middle">
-                  <i class="fa fa-exclamation-triangle icon-right input-icon error-icon"></i>
-                </td>
-              </tr>
-              <tr class="table-success">
-                <td>
-                  <span class="badge badge-pill badge-primary">SUCCESS</span>
-                </td>
-                <td>Wien</td>
-                <td align="right">113</td>
-                <td align="middle" class="valid">
-                  <i class="fa fa-check success-icon icon-right input-icon"></i>
-                </td>
-              </tr>
-              <tr class="table-warning">
-                <td>
-                  <span class="badge badge-pill badge-warning">WARNING</span>
-                </td>
-                <td>Brussels</td>
-                <td align="right">68</td>
-                <td align="middle"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Vancouver</td>
-                <td align="right">93</td>
-                <td align="middle"></td>
-              </tr>
-              <tr class="table-info">
-                <td>
-                  <span class="badge badge-pill badge-info">INFO</span>
-                </td>
-                <td>Washington</td>
-                <td align="right">280</td>
-                <td align="middle"></td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </vuestic-widget>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
         <vuestic-widget :headerText="'Situação dos casos no ' + this.$store.state.app.dengueData.estado">
           <vuestic-data-table
           :apiMode="apiMode"
@@ -157,7 +77,7 @@
             name: 'casos.f2017', // Object property name in your data e.g. (data[0].name)
           },
           {
-            title: 'População',
+            title: 'População 2017',
             name: 'populacao2017',
             sortField: 'populacao2017'
           },
@@ -167,36 +87,60 @@
           }
         ],
         tableFieldsCasos: [
-          {
-            name: '',
-            title: 'Situação',
-            dataClass: 'text-center'
-          },
+          // {
+          //   name: 'cas',
+          //   title: 'Situação',
+          //   dataClass: 'table-info'
+          // },
           {
             title: 'Cidade',
             name: 'nome', // Object property name in your data e.g. (data[0].name)
             sortField: 'nome' // Object property name in your data which will be used for sorting
           },
           {
-            title: 'C2013',
+            title: 'Casos',
             name: 'casos.f2013', // Object property name in your data e.g. (data[0].name)
-            dataClass: 'casos.i2017'
+            dataClass: 'text-center'
           },
           {
-            title: 'C2014',
+            title: '2013',
+            name: 'casos.i2013', // Object property name in your data e.g. (data[0].name)
+          },
+          {
+            title: 'Casos',
             name: 'casos.f2014', // Object property name in your data e.g. (data[0].name)
+            dataClass: 'text-center'
           },
           {
-            title: 'C2015',
+            title: '2014',
+            name: 'casos.i2014', // Object property name in your data e.g. (data[0].name)
+          },
+          {
+            title: 'Casos',
             name: 'casos.f2015', // Object property name in your data e.g. (data[0].name)
+            dataClass: 'text-center'
           },
           {
-            title: 'C2016',
+            title: '2015',
+            name: 'casos.i2015', // Object property name in your data e.g. (data[0].name)
+          },
+          {
+            title: 'Casos',
             name: 'casos.f2016', // Object property name in your data e.g. (data[0].name)
+            dataClass: 'text-center'
           },
           {
-            title: 'C2017',
+            title: '2016',
+            name: 'casos.i2016', // Object property name in your data e.g. (data[0].name)
+          },
+          {
+            title: 'Casos',
             name: 'casos.f2017', // Object property name in your data e.g. (data[0].name)
+            dataClass: 'text-center'
+          },
+          {
+            title: '2017',
+            name: 'casos.i2017', // Object property name in your data e.g. (data[0].name)
           }
           // {
           //   title: '%',
@@ -220,6 +164,11 @@
           },
           'populacao2017': function (item1, item2) {
             return item1 >= item2 ? 1 : -1
+          }
+        },
+        dataClass: {
+          'nada': function () {
+            return 'table-success'
           }
         },
         dataModeFilterableFields: ['nome', 'populacao2017'],

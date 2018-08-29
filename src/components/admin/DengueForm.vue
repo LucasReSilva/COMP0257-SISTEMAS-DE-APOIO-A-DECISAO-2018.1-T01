@@ -108,40 +108,59 @@ export default {
         sigla: this.estadoSelectModel.sigla
       }
       this.$store.commit('setDengueData', dengueData)
-      this.$store.commit('resetCoordenadasAtual')
-      this.tableData = { data: [] }
-      switch (dengueData.id) {
-        case 23:
-          this.tableData = Object.assign({}, this.tableData, municipios23)
-          break
-        case 31:
-          this.tableData = Object.assign({}, this.tableData, municipios31)
-          break
-        case 32:
-          this.tableData = Object.assign({}, this.tableData, municipios32)
-          break
-        case 33:
-          this.tableData = Object.assign({}, this.tableData, municipios33)
-          break
-        default:
-          this.tableData = Object.assign({}, this.tableData, municipios41)
-      }
-      this.$store.commit('setTableData', this.tableData)
-      var arrayLengthData = this.$store.state.app.tableData.data.length
-      for (var m = 0; m < arrayLengthData; m++) {
-        let item = this.$store.state.app.tableData.data[m] // alias para o item atual da tabela de dados
-        let cod = Number(String(item['id']).substr(0, 2)) // codigo do estado
-        var arrayLength = populacao.municipios.length
-        // getCasosData(item['id']) // request casos da dengue
-        for (var i = 0; i < arrayLength; i++) {
-          if (cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC']) === item['id']) {
-            this.updateTableDataItem(m, 'populacao2017', populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
-            this.updateTableDataItem(m, 'casos', this.seedCasos(populacao.municipios[i]['POPULAÇÃO ESTIMADA']))
-            this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], this.$store.state.app.tableData.data.casos['f' + dengueData.ano])
+      // this.$store.commit('resetCoordenadasAtual')
+
+      if (this.$localStorage.get(dengueData.estado)) {
+        this.$localStorage.set('teste', 'teste')
+        // this.todos = JSON.parse(localStorage.getItem(estado));
+        this.$store.commit('setTableData', JSON.parse(this.$localStorage.get(dengueData.estado)))
+        this.$store.commit('setCoordenadas', JSON.parse(this.$localStorage.get('coordenadasAtual')))
+        // this.$store.commit('setTableData', JSON.parse(localStorage.getItem(dengueData.estado)))
+        // this.$store.commit('setCoordenadas', JSON.parse(localStorage.getItem('coordenadasAtual').data))
+        // console.log(JSON.parse(localStorage.getItem('coordenadasAtual')))
+        console.log('Dados carregados do localStorage')
+      } else {
+        this.tableData = { data: [] }
+        switch (dengueData.id) {
+          case 23:
+            this.tableData = Object.assign({}, this.tableData, municipios23)
+            break
+          case 31:
+            this.tableData = Object.assign({}, this.tableData, municipios31)
+            break
+          case 32:
+            this.tableData = Object.assign({}, this.tableData, municipios32)
+            break
+          case 33:
+            this.tableData = Object.assign({}, this.tableData, municipios33)
+            break
+          default:
+            this.tableData = Object.assign({}, this.tableData, municipios41)
+        }
+        this.$store.commit('setTableData', this.tableData)
+        var arrayLengthData = this.$store.state.app.tableData.data.length
+        for (var m = 0; m < arrayLengthData; m++) {
+          let item = this.$store.state.app.tableData.data[m] // alias para o item atual da tabela de dados
+          let cod = Number(String(item['id']).substr(0, 2)) // codigo do estado
+          var arrayLength = populacao.municipios.length
+          // getCasosData(item['id']) // request casos da dengue
+          for (var i = 0; i < arrayLength; i++) {
+            if (cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC']) === item['id']) {
+              this.updateTableDataItem(m, 'populacao2017', populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
+              let casos = this.seedCasos(populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
+              this.updateTableDataItem(m, 'casos', casos)
+              this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], casos['f' + dengueData.ano])
+            }
           }
         }
       }
+      this.$store.commit('setDataTableCoordenadas', this.$store.state.app.coordenadasAtual)
       this.$store.commit('setLoading', false)
+      this.$localStorage.set(dengueData.estado, JSON.stringify(this.$store.state.app.tableData))
+      this.$localStorage.set('coordenadasAtual', JSON.stringify(this.$store.state.app.coordenadasAtual))
+      // localStorage.setItem(dengueData.estado, JSON.stringify(this.$store.state.app.tableData))
+      // let temp = { data: this.$store.state.app.coordenadasAtual } // contornar limitacao do localStorage
+      // localStorage.setItem('coordenadasAtual', JSON.stringify(temp))
       console.log('Dados Atualizados') // descolar um LADA
       console.log(JSON.stringify(this.$store.state.app.tableData.data[2]))
     },
@@ -202,11 +221,11 @@ export default {
       obj['f' + ano] = Math.floor(((Number(populacao[index]) / 3) + 1) * casoBase)
       let indicador = (obj['f' + ano] / Number(populacao)) * 100000
       if (indicador < 100) {
-        obj['i' + ano] = 'baixo'
+        obj['i' + ano] = '✅'
       } else if (indicador >= 100 & indicador <= 300) {
-        obj['i' + ano] = 'medio'
+        obj['i' + ano] = '🚧'
       } else {
-        obj['i' + ano] = 'alto'
+        obj['i' + ano] = '🚨'
       }
       obj['p' + ano] = ((obj['f' + ano] / Number(populacao)) * 100).toFixed(2)
 

@@ -14,11 +14,13 @@ import './i18n'
 import YmapPlugin from 'vue-yandex-maps'
 import VueResource from 'vue-resource'
 // https://www.npmjs.com/package/vue-google-heatmap
+import VueLocalStorage from 'vue-localstorage'
 import VueGoogleHeatmap from 'vue-google-heatmap'
 
 Vue.use(VuesticPlugin)
 Vue.use(YmapPlugin)
 Vue.use(VueResource)
+Vue.use(VueLocalStorage)
 Vue.use(VueGoogleHeatmap, {
   apiKey: 'AIzaSyBNAqPrTQoz9P4NBlDDyfxrnKiafkaL8iQ' // this.$store.state.app.config.googleMaps.apiKey
 })
