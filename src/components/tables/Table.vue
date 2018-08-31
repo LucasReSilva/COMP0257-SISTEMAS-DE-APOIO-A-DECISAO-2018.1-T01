@@ -84,6 +84,7 @@
           {
             title: '%',
             name: 'casos.p2017',
+            sortField: 'casos.p2017'
           }
         ],
         tableFieldsCasos: [
@@ -164,6 +165,9 @@
           },
           'populacao2017': function (item1, item2) {
             return item1 >= item2 ? 1 : -1
+          },
+          'casos.p2017': function (item1, item2) {
+            return item1 >= item2 ? 1 : -1
           }
         },
         dataClass: {
@@ -171,7 +175,7 @@
             return 'table-success'
           }
         },
-        dataModeFilterableFields: ['nome', 'populacao2017'],
+        dataModeFilterableFields: ['nome', 'populacao2017', '%'],
         // tableData: {},
         dengueData: {},
         // url: 'https://info.dengue.mat.br/api/alertcity?disease=dengue&format=jsonv&ew_start=1&ew_end=50',

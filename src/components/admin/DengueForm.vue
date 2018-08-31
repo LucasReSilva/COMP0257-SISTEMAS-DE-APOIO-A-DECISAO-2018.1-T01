@@ -108,7 +108,7 @@ export default {
         sigla: this.estadoSelectModel.sigla
       }
       this.$store.commit('setDengueData', dengueData)
-      // this.$store.commit('resetCoordenadasAtual')
+      this.$store.commit('resetCoordenadasAtual')
 
       if (this.$localStorage.get(dengueData.estado)) {
         this.$localStorage.set('teste', 'teste')
@@ -149,7 +149,7 @@ export default {
               this.updateTableDataItem(m, 'populacao2017', populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
               let casos = this.seedCasos(populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
               this.updateTableDataItem(m, 'casos', casos)
-              this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], casos['f' + dengueData.ano])
+              this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], i % 30)    // casos['f' + dengueData.ano]
             }
           }
         }

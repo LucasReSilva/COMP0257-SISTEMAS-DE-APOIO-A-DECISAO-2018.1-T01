@@ -5,8 +5,8 @@
       wizard-layout="vertical"
       :wizard-type="wizardType">
       <div slot="page1" class="form-wizard-tab-content">
-        <h4>Funcionalidade #1</h4>
-        <p>Manduma pindureta quium dia nois paga. Interagi no mé, cursus quis, vehicula ac nisi. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Paisis, filhis, espiritis santis. </p>
+        <h4>Mapa de calor dos casos de dengue</h4>
+        <p>O mapa de calor permite visualizar as áreas com maior ocorrência de casos de dengue. Quanto maior a região vermelha em uma dada região, maior é a quantidade de casos de dengue. Com isso os gestores podem aplicar mais recursos nessas áreas e otimizar o combate a dengue. </p>
         <div class="form-group with-icon-right"
              :class="{'has-error': errors.has('name'), 'valid': isFormFieldValid('name')}">
           <div class="input-group">
@@ -16,22 +16,25 @@
         </div>
       </div>
       <div slot="page2" class="form-wizard-tab-content">
-        <h4>Funcionalidade #2</h4>
-        <p>Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. Quem num gosta di mé, boa gentis num é. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</p>
+        <h4>Ranking da taxa de incidência de casos da dengue</h4>
+        <p>O ranking de indicadores de incidência traz um forma de comparar a situação das cidades com um indicador nacional. Devido a falta de dados populacionais, o calculo de todos os anos utilizara os dados da população de 2017.</p> <p>
+Para calcular a incidência, divide-se o número de notificações (ou seja, o número de novos casos da doença) pela população do município e multiplica-se este valor por 100 mil. </p>
+<p>O Ministério da Saúde considera três níveis de incidência de dengue: baixa (menos de 100 casos/100 mil habitantes), média (de 100 a 300 casos/100 mil habitantes) e alta (mais de 300 casos/100 mil habitantes).</p>
+<p>A taxa de incidência é, portanto, um importante indicador de alerta e ajuda a orientar as ações de combate à dengue.</p>
 
         
       </div>
       <div slot="page3" class="form-wizard-tab-content">
-        <h4>Funcionalidade #3</h4>
+        <h4>Ranking da porcentagem de casos de dengue</h4>
         <p>
-          Detraxit consequat et quo num tendi nada. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Quem manda na minha terra sou euzis! Diuretics paradis num copo é motivis de denguis. 
+          Esse ranking apresenta o número de casos de dengue, a população e a porcentagem da população que teve dengue no ano de 2017. Esse ranking ajuda a entender o qual impactante o número de casos de dengue é em uma certa cidade. 
         </p>
       </div>
       <div slot="wizardCompleted"
            class="form-wizard-tab-content wizard-completed-tab">
-        <h4>Algum texto justificando o uso dessas funcionalidades</h4>
+        <h4>Objetivos</h4>
         <p>
-          A ordem dos tratores não altera o pão duris. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl. Sapien in monti palavris qui num significa nadis i pareci latim. 
+          O objetivo do SADengue é presentar informações importantes sobre a doença, como a taxa de incidência na população, afim de facilitar a tomada de decisão relacionada a demanda de recursos a fim de diminuir os casos de dengue nas áreas mais afetadas. Espera-se alcançar os objetivos por meio da exibição de mapa de calor e rankings das cidades com maior incidência da doença. 
         </p>
       </div>
     </vuestic-wizard>
@@ -52,7 +55,7 @@
       return {
         steps: [
           {
-            label: 'Funcionalidade #1',
+            label: '#1 Mapa de calor',
             slot: 'page1',
             onNext: () => {
               // this.validateFormField('name')
@@ -64,7 +67,7 @@
             }
           },
           {
-            label: 'Funcionalidade #2',
+            label: '#2 Ranking da taxa de incidência',
             slot: 'page2',
             onNext: () => {
               // this.$refs.selectedCountrySelect.validate()
@@ -76,7 +79,7 @@
             }
           },
           {
-            label: 'Funcionalidade #3',
+            label: '#3 Ranking da porcentagem de casos',
             slot: 'page3'
           }
         ],

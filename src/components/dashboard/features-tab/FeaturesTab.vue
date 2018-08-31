@@ -4,51 +4,9 @@
   <div class="overview-tab dashboard-tab">
     <div class="d-flex overview-row flex-row w-100 justify-content-sm-around justify-content-xs-start">
         <div class="overview-col">
-    Mussum Ipsum, cacilds vidis litro abertis. Diuretics paradis num copo é motivis de denguis. Casamentiss faiz malandris se pirulitá. Mé faiz elementum girarzis, nisi eros vermeio. Interagi no mé, cursus quis, vehicula ac nisi.
-
-Sapien in monti palavris qui num significa nadis i pareci latim. Detraxit consequat et quo num tendi nada. Atirei o pau no gatis, per gatis num morreus. Quem num gosta di mé, boa gentis num é. 
+    A dengue é uma doença que ainda afeta boa parte da população brasileira, segundo o boletim epidemiológico (Ministério da Saúde 2018)  até a sétima semana de 2018, período que corresponde 31/12/2017 a 17/02/2018, foram registrados 32.161 casos prováveis de dengue no país. Casos prováveis para o Ministério da Saúde são os casos notificados, excluindo-se os descartados, por diagnóstico laboratorial negativo, com coleta oportuna ou diagnosticados para outras doenças. Comparando os dados desse período de 2018 com o mesmo período de anos anteriores, o número de casos atuais é inferior, mas continua preocupante pois ainda apresentam muitas ocorrências. Isso mostra que a doença ainda é um empecilho para saúde dos brasileiros. 
   </div>
-      <div class="overview-col">
-        <div class="overview-item">
-          <div class="overview-icon-container">
-            <i class="i-vuestic-vue"></i>
-          </div>
-          Built with Vue.js framework
-        </div>
-        <div class="overview-item">
-          <div class="overview-icon-container">
-            <i class="i-vuestic-free"></i>
-          </div>
-          Absolutely free for everyone
-        </div>
-        <div class="overview-item">
-          <div class="overview-icon-container">
-            <i class="i-vuestic-fresh"></i>
-          </div>
-          Fresh and crisp design
-        </div>
-      </div>
 
-      <div class="overview-col">
-        <div class="overview-item">
-          <div class="overview-icon-container">
-            <i class="i-vuestic-responsive"></i>
-          </div>
-          Responsive and optimized for mobile
-        </div>
-        <div class="overview-item">
-          <div class="overview-icon-container">
-            <i class="i-vuestic-rich"></i>
-          </div>
-          Tons of useful components
-        </div>
-        <div class="overview-item">
-          <div class="overview-icon-container">
-            <i class="i-vuestic-clean-code"></i>
-          </div>
-          Completely jQuery free
-        </div>
-      </div>
     </div>
   </div>
 </template>
