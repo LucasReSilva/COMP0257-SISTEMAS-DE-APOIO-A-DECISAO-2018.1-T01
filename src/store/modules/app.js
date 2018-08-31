@@ -86,7 +86,8 @@ const mutations = {
     state.tableData.data['coordenadas'] = coordendas
   },
   updateCoordenadasAtual (state, coordenadas) {
-    state.coordenadasAtual.push(coordenadas)
+    let juncao = state.coordenadasAtual.concat(coordenadas)
+    state.coordenadasAtual = juncao
   },
   resetCoordenadasAtual (state) {
     state.coordenadasAtual = []

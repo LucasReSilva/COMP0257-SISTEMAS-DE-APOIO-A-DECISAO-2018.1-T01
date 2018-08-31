@@ -5,9 +5,9 @@
         <vuestic-widget class="widget-viewport-height" :headerText="'Mapa de calor do ' + this.$store.state.app.dengueData.estado + ' em ' + this.$store.state.app.dengueData.ano">
           <!-- <google-map></google-map> -->
           <vue-google-heatmap :points="points"
-                      :lat="points[0]['lat']"
-                      :lng="points[0]['lng']" 
-                      :initial-zoom="7" />
+                        :lat="this.$store.state.app.dengueData.lat"
+                        :lng="this.$store.state.app.dengueData.lng" 
+                        :initial-zoom="7" />
         </vuestic-widget>
       </div>
     </div>
@@ -24,10 +24,13 @@
     },
     data () {
       return {
-        points: this.$store.state.app.coordenadasAtual
+        points: this.$store.state.app.coordenadasAtual,
+        // :latthis.$store.state.app.dengueData.lat,lng: this.$store.state.app.dengueData.lng
       }
     }
   }
+  // :lat="points[0]['lat']":lng="points[0]['lng']"
+  // :/lat="this.$store.state.app.dengueData.lat":lng="this.$store.state.app.dengueData.lng"
 </script>
 
 <style lang="scss">

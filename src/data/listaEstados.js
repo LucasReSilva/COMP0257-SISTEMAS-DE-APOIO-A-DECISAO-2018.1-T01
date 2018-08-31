@@ -7,7 +7,9 @@ export default [
       id: 2,
       sigla: 'NE',
       nome: 'Nordeste'
-    }
+    },
+    lat: -5.3171555,
+    lng: -41.5828544
   },
   {
     id: 31,
@@ -17,7 +19,9 @@ export default [
       id: 3,
       sigla: 'SE',
       nome: 'Sudeste'
-    }
+    },
+    lat: -18.5246522,
+    lng: -49.9498595
   },
   {
     id: 32,
@@ -27,7 +31,9 @@ export default [
       id: 3,
       sigla: 'SE',
       nome: 'Sudeste'
-    }
+    },
+    lat: -19.5450109,
+    lng: -39.8560399
   },
   {
     id: 33,
@@ -37,7 +43,9 @@ export default [
       id: 3,
       sigla: 'SE',
       nome: 'Sudeste'
-    }
+    },
+    lat: -22.0622477,
+    lng: -44.0444934
   },
   {
     id: 41,
@@ -47,6 +55,8 @@ export default [
       id: 4,
       sigla: 'S',
       nome: 'Sul'
-    }
+    },
+    lat: -24.6003324,
+    lng: -53.5659501
   }
 ]

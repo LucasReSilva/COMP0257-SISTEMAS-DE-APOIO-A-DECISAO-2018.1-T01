@@ -105,20 +105,22 @@ export default {
         ano: this.anoSelectModel.ano,
         estado: this.estadoSelectModel.nome,
         id: this.estadoSelectModel.id,
-        sigla: this.estadoSelectModel.sigla
+        sigla: this.estadoSelectModel.sigla,
+        lat: this.estadoSelectModel.lat,
+        lng: this.estadoSelectModel.lng
       }
       this.$store.commit('setDengueData', dengueData)
-      this.$store.commit('resetCoordenadasAtual')
+      // this.$store.commit('resetCoordenadasAtual')
 
       if (this.$localStorage.get(dengueData.estado)) {
-        this.$localStorage.set('teste', 'teste')
-        // this.todos = JSON.parse(localStorage.getItem(estado));
-        this.$store.commit('setTableData', JSON.parse(this.$localStorage.get(dengueData.estado)))
-        this.$store.commit('setCoordenadas', JSON.parse(this.$localStorage.get('coordenadasAtual')))
-        // this.$store.commit('setTableData', JSON.parse(localStorage.getItem(dengueData.estado)))
-        // this.$store.commit('setCoordenadas', JSON.parse(localStorage.getItem('coordenadasAtual').data))
-        // console.log(JSON.parse(localStorage.getItem('coordenadasAtual')))
-        console.log('Dados carregados do localStorage')
+        this.$store.commit(
+          'setTableData',
+          JSON.parse(this.$localStorage.get(dengueData.estado))
+        )
+        this.$store.commit(
+          'setCoordenadas',
+          JSON.parse(this.$localStorage.get('coordenadasAtual'))
+        )
       } else {
         this.tableData = { data: [] }
         switch (dengueData.id) {
@@ -143,26 +145,44 @@ export default {
           let item = this.$store.state.app.tableData.data[m] // alias para o item atual da tabela de dados
           let cod = Number(String(item['id']).substr(0, 2)) // codigo do estado
           var arrayLength = populacao.municipios.length
-          // getCasosData(item['id']) // request casos da dengue
           for (var i = 0; i < arrayLength; i++) {
-            if (cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC']) === item['id']) {
-              this.updateTableDataItem(m, 'populacao2017', populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
-              let casos = this.seedCasos(populacao.municipios[i]['POPULAÇÃO ESTIMADA'])
+            if (
+              cod * 10 ** 5 + Number(populacao.municipios[i]['COD. MUNIC']) ===
+              item['id']
+            ) {
+              this.updateTableDataItem(
+                m,
+                'populacao2017',
+                populacao.municipios[i]['POPULAÇÃO ESTIMADA']
+              )
+              let casos = this.seedCasos(
+                populacao.municipios[i]['POPULAÇÃO ESTIMADA']
+              )
               this.updateTableDataItem(m, 'casos', casos)
-              this.updateCoordenadasAtual(populacao.municipios[i]['LATITUDE'], populacao.municipios[i]['LONGITUDE'], i % 30)    // casos['f' + dengueData.ano]
+              this.updateCoordenadasAtual(
+                populacao.municipios[i]['LATITUDE'],
+                populacao.municipios[i]['LONGITUDE'],
+                casos['f' + dengueData.ano]
+              ) // casos['f' + dengueData.ano]
             }
           }
         }
       }
-      this.$store.commit('setDataTableCoordenadas', this.$store.state.app.coordenadasAtual)
+      this.$store.commit(
+        'setDataTableCoordenadas',
+        this.$store.state.app.coordenadasAtual
+      )
       this.$store.commit('setLoading', false)
-      this.$localStorage.set(dengueData.estado, JSON.stringify(this.$store.state.app.tableData))
-      this.$localStorage.set('coordenadasAtual', JSON.stringify(this.$store.state.app.coordenadasAtual))
-      // localStorage.setItem(dengueData.estado, JSON.stringify(this.$store.state.app.tableData))
-      // let temp = { data: this.$store.state.app.coordenadasAtual } // contornar limitacao do localStorage
-      // localStorage.setItem('coordenadasAtual', JSON.stringify(temp))
+      this.$localStorage.set(
+        dengueData.estado,
+        JSON.stringify(this.$store.state.app.tableData)
+      )
+      this.$localStorage.set(
+        'coordenadasAtual',
+        JSON.stringify(this.$store.state.app.coordenadasAtual)
+      )
+
       console.log('Dados Atualizados') // descolar um LADA
-      console.log(JSON.stringify(this.$store.state.app.tableData.data[2]))
     },
     getCasosData (codigo) {
       let myPromise = new Promise((resolve, reject) => {
@@ -196,18 +216,22 @@ export default {
       })
     },
     updateCoordenadasAtual (lat, lng, qtd) {
+      let coordenadas = []
       for (let index = 0; index < qtd; index++) {
-        let coordenada = {lat: lat, lng: lng}
-        this.$store.commit('updateCoordenadasAtual', coordenada)
+        coordenadas.push({ lat: lat, lng: lng })
       }
+      this.$store.commit('updateCoordenadasAtual', coordenadas)
       console.log(qtd)
     },
     seedCasos (populacao) {
       populacao = String(populacao)
-      if (populacao.length <= 4) { populacao = '0' + populacao }
+      if (populacao.length <= 4) {
+        populacao = '0' + populacao
+      }
       let casoBase = Math.floor(Number(populacao) / 1000)
       // let fakeCasos = {}
-      let fakeCasos = Object.assign({},
+      let fakeCasos = Object.assign(
+        {},
         this.createCasoObject(2013, populacao, casoBase, 0),
         this.createCasoObject(2014, populacao, casoBase, 1),
         this.createCasoObject(2015, populacao, casoBase, 2),
@@ -218,16 +242,18 @@ export default {
     },
     createCasoObject (ano, populacao, casoBase, index) {
       let obj = {}
-      obj['f' + ano] = Math.floor(((Number(populacao[index]) / 3) + 1) * casoBase)
-      let indicador = (obj['f' + ano] / Number(populacao)) * 100000
+      obj['f' + ano] = Math.floor(
+        (Number(populacao[index]) / 3 + 1) * casoBase
+      )
+      let indicador = obj['f' + ano] / Number(populacao) * 100000
       if (indicador < 100) {
         obj['i' + ano] = '✅'
-      } else if (indicador >= 100 & indicador <= 300) {
+      } else if ((indicador >= 100) & (indicador <= 300)) {
         obj['i' + ano] = '🚧'
       } else {
         obj['i' + ano] = '🚨'
       }
-      obj['p' + ano] = ((obj['f' + ano] / Number(populacao)) * 100).toFixed(2)
+      obj['p' + ano] = (obj['f' + ano] / Number(populacao) * 100).toFixed(2)
 
       return obj
     }
@@ -237,8 +263,7 @@ export default {
       this.$validator.validateAll()
     })
   },
-  destroyed: function () {
-  }
+  destroyed: function () {}
 }
 // let promises = null;
 // cidades.forEach(cidade =>{
